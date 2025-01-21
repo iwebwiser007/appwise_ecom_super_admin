@@ -199,7 +199,6 @@
 
                 <!-- feature box -->
                 <div class="data_block" data-aos="fade-right" data-aos-duration="1500">
-
                     <div class="text">
                         <h4>Seamless payment integration</h4>
                         <p>This system offers your customers multiple payment options and an easy, safe checkout
@@ -651,8 +650,8 @@
                     <li>
                         <div class="step_text" data-aos="fade-left" data-aos-duration="1500">
                             <h4>Our Team Will Reach Out</h4>
-                            <p>Once we receive your form, our team will contact you in order to address your queries and
-                                talk about how we can help you set up an ideal e-commerce system for your business.
+                            <p>Once we receive your form, a local team member will contact you to address any queries and collaborate
+                                on crafting the perfect e-commerce solution for your business.
                             </p>
                         </div>
                         <div class="step_number">
@@ -666,8 +665,9 @@
                     <li>
                         <div class="step_text" data-aos="fade-right" data-aos-duration="1500">
                             <h4>Meeting with Team</h4>
-                            <p>We will have a meeting with our team in order to discuss your needs, outline the
-                                capabilities of our system, and tailor the best solution for your business.</p>
+                            <p>We’ll handle everything to get your online store up and running, including domain registration, website
+                                setup, payment and courier integrations, and delivering a fully operational eCommerce platform ready for
+                                you to customize and upload your products.</p>
                         </div>
                         <div class="step_number">
                             <h3>03</h3>
@@ -676,6 +676,24 @@
                             <img src="{{ asset('public/front/images/enjoy_app.jpg') }}" alt="image">
                         </div>
                     </li>
+
+                    <li>
+                        <div class="step_img" data-aos="fade-right" data-aos-duration="1500">
+                            <img src="{{ asset('public/front/images/create_account.jpg') }}" alt="image">
+                        </div>
+                        <div class="step_number">
+                            <h3>04</h3>
+                        </div>
+                        <div class="step_text" data-aos="fade-left" data-aos-duration="1500">
+                            <h4>Our Team Will Reach Out</h4>
+                            <p>“Once your store is set up and we will provide ou’ve received basic training, you’ll have a fully
+                                functional eCommerce website with an integrated online payment gateway and courier services. You’ll be
+                                ready to customise it by adding your logo, contact details, and products. You can even enhance your
+                                marketing by adding social media links via the back end, allowing you to start trading immediately.”
+                            </p>
+                        </div>
+                    </li>
+
                 </ul>
             </div>
         </div>
@@ -805,15 +823,13 @@
                     <div class="card-header" id="headingOne">
                         <h2 class="mb-0">
                             <button type="button" class="btn btn-link active" data-toggle="collapse" data-target="#collapseOne">
-                                <i class="icon_faq icofont-plus"></i></i>What is an eCommerce system, and how can it
-                                benefit my business?</button>
+                                <i class="icon_faq icofont-plus"></i></i>What is an e-commerce website?</button>
                         </h2>
                     </div>
                     <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
                         <div class="card-body">
-                            <p>An eCommerce system enables an individual to build and then run an online shop and
-                                simplify operations, track sales, and improve the quality of customer experiences. It
-                                grows your business through the automation of processes and information accessibility.
+                            <p>An e-commerce website allows you to sell products or services online, our ecommerce website are fully
+                                customisable and integrated into a payment gateway and courier services.
                             </p>
                         </div>
                     </div>
@@ -822,30 +838,14 @@
                     <div class="card-header" id="headingTwo">
                         <h2 class="mb-0">
                             <button type="button" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"><i
-                                    class="icon_faq icofont-plus"></i></i> How long would it
-                                take to build up my ecommerce store?</button>
+                                    class="icon_faq icofont-plus"></i></i> How long does it take to set up my online store?</button>
                         </h2>
                     </div>
                     <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
                         <div class="card-body">
-                            <p>For most of the time, it will take a few days to a few weeks, depending on your needs. We
-                                will guide you through the process for a smooth launch.
+                            <p>Depending on your requirements, it usually takes 5–10 business days to fully set up and launch your
+                                store.
                             </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="card" data-aos="fade-up" data-aos-duration="1500">
-                    <div class="card-header" id="headingThree">
-                        <h2 class="mb-0">
-                            <button type="button" class="btn btn-link collapsed" data-toggle="collapse"
-                                data-target="#collapseThree"><i class="icon_faq icofont-plus"></i></i>Is the
-                                e-commerce system customizable to fit my brand?</button>
-                        </h2>
-                    </div>
-                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-                        <div class="card-body">
-                            <p>Yes, our system provides themes and templates that can be customized for use as your own
-                                company brand.</p>
                         </div>
                     </div>
                 </div>
@@ -853,14 +853,13 @@
                     <div class="card-header" id="headingFour">
                         <h2 class="mb-0">
                             <button type="button" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour"><i
-                                    class="icon_faq icofont-plus"></i></i>Can I offer
-                                different payment options using my website?</button>
+                                    class="icon_faq icofont-plus"></i></i>How do I get my money?</button>
                         </h2>
                     </div>
                     <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
                         <div class="card-body">
-                            <p>Absolutely! Our eCommerce system supports a wide range of secure payment gateways to
-                                ensure the best checkout experience for your customers.</p>
+                            <p>Payment is made via secure online payment into your very own payfast account in real time. You have
+                                full control of all your money at all time. We do not touch or hold any of your money at any time.</p>
                         </div>
                     </div>
                 </div>
@@ -868,15 +867,15 @@
                     <div class="card-header" id="headingFive">
                         <h2 class="mb-0">
                             <button type="button" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFive"><i
-                                    class="icon_faq icofont-plus"></i></i> Do I need to be
-                                technically knowledgeable to use the eCommerce system?
+                                    class="icon_faq icofont-plus"></i></i> Can I customize my store after it’s set up?
                             </button>
                         </h2>
                     </div>
                     <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
                         <div class="card-body">
-                            <p>It has no technical knowledge, and it's user-friendly; plus, there is a team that can
-                                help you manage your store with ease.</p>
+                            <p>Yes, you will have full access to customise your store, including adding your logo, updating contact
+                                details about us pages, terms and condition and uploading products, pictures and descriptions of
+                                products.</p>
                         </div>
                     </div>
                 </div>
@@ -884,16 +883,223 @@
                     <div class="card-header" id="headingSix">
                         <h2 class="mb-0">
                             <button type="button" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSix"><i
-                                    class="icon_faq icofont-plus"></i></i> Once my eCommerce
-                                system has been launched, will there be continued support?
+                                    class="icon_faq icofont-plus"></i></i> Can payment methods be integrated?
                             </button>
                         </h2>
                     </div>
                     <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
                         <div class="card-body">
                             <p>
-                                We do provide support for continuous running of your store. Any technical issues or
-                                updates, we are here to offer assistance.
+                                We integrate secure payment gateways the payfast and can accept all credit cards and debit cards, and
+                                more, depending on your preference.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="card-header" id="headingSeven">
+                        <h2 class="mb-0">
+                            <button type="button" class="btn btn-link collapsed" data-toggle="collapse"
+                                data-target="#collapseSeven"><i class="icon_faq icofont-plus"></i></i> Can I link my social media
+                                accounts to the store?
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordionExample">
+                        <div class="card-body">
+                            <p>
+                                Yes, you can add links to your social media profiles to enhance your marketing and connect with
+                                customers.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="card-header" id="headingEight">
+                        <h2 class="mb-0">
+                            <button type="button" class="btn btn-link collapsed" data-toggle="collapse"
+                                data-target="#collapseEight"><i class="icon_faq icofont-plus"></i></i> Do you provide training on how to
+                                manage the store?
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseEight" class="collapse" aria-labelledby="headingEight" data-parent="#accordionExample">
+                        <div class="card-body">
+                            <p>
+                                Yes, we provide basic training on managing your store, including adding products, tracking orders, and
+                                using the back-end tools.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="card-header" id="headingNine">
+                        <h2 class="mb-0">
+                            <button type="button" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseNine"><i
+                                    class="icon_faq icofont-plus"></i></i> What courier services can be integrated?
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseNine" class="collapse" aria-labelledby="headingNine" data-parent="#accordionExample">
+                        <div class="card-body">
+                            <p>
+                                We integrate with Courier guy, who will simply arrive at your registered address to collect the parcel
+                                and deliver it to its destination allowing you and the customer live tracking.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="card-header" id="headingTen">
+                        <h2 class="mb-0">
+                            <button type="button" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTen"><i
+                                    class="icon_faq icofont-plus"></i></i> Is my store mobile-friendly?
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseTen" class="collapse" aria-labelledby="headingTen" data-parent="#accordionExample">
+                        <div class="card-body">
+                            <p>
+                                Absolutely! All our e-commerce websites are designed to be fully responsive and work seamlessly on
+                                mobile devices.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="card-header" id="headingEleven">
+                        <h2 class="mb-0">
+                            <button type="button" class="btn btn-link collapsed" data-toggle="collapse"
+                                data-target="#collapseEleven"><i class="icon_faq icofont-plus"></i></i> Do you provide an APP ?
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseEleven" class="collapse" aria-labelledby="headingEleven" data-parent="#accordionExample">
+                        <div class="card-body">
+                            <p>
+                                We offer a full app integration available on the Playstore and Appstore depending on what package you
+                                have opted for.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="card-header" id="headingTwelve">
+                        <h2 class="mb-0">
+                            <button type="button" class="btn btn-link collapsed" data-toggle="collapse"
+                                data-target="#collapseTwelve"><i class="icon_faq icofont-plus"></i></i> Can I add discounts or
+                                promotions to my store?
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseTwelve" class="collapse" aria-labelledby="headingTwelve" data-parent="#accordionExample">
+                        <div class="card-body">
+                            <p>
+                                Yes, you can easily create and manage discounts, promo codes, and special offers from the back end of
+                                your store.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="card-header" id="headingThirteen">
+                        <h2 class="mb-0">
+                            <button type="button" class="btn btn-link collapsed" data-toggle="collapse"
+                                data-target="#collapseThirteen"><i class="icon_faq icofont-plus"></i></i> What support do you provide
+                                after setup?
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseThirteen" class="collapse" aria-labelledby="headingThirteen" data-parent="#accordionExample">
+                        <div class="card-body">
+                            <p>
+                                We offer ongoing support and assistance to help you manage and scale your e-commerce business.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="card-header" id="headingFourteen">
+                        <h2 class="mb-0">
+                            <button type="button" class="btn btn-link collapsed" data-toggle="collapse"
+                                data-target="#collapseFourteen"><i class="icon_faq icofont-plus"></i></i> How do I handle returns and
+                                refunds?
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseFourteen" class="collapse" aria-labelledby="headingFourteen" data-parent="#accordionExample">
+                        <div class="card-body">
+                            <p>
+                                You can set your return and refund policies, and we’ll help you configure them on your store.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="card-header" id="headingFifteen">
+                        <h2 class="mb-0">
+                            <button type="button" class="btn btn-link collapsed" data-toggle="collapse"
+                                data-target="#collapseFifteen"><i class="icon_faq icofont-plus"></i></i> What happens if I encounter
+                                technical issues?
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseFifteen" class="collapse" aria-labelledby="headingFifteen" data-parent="#accordionExample">
+                        <div class="card-body">
+                            <p>
+                                Our LOCAL team is available to assist with any technical issues and ensure your store runs smoothly.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="card-header" id="headingSixteen">
+                        <h2 class="mb-0">
+                            <button type="button" class="btn btn-link collapsed" data-toggle="collapse"
+                                data-target="#collapseSixteen"><i class="icon_faq icofont-plus"></i></i> Do you provide hosting for my
+                                website?
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseSixteen" class="collapse" aria-labelledby="headingSixteen" data-parent="#accordionExample">
+                        <div class="card-body">
+                            <p>
+                                Yes, we provide secure and reliable hosting to ensure your store is always accessible to customers.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="card-header" id="headingSeventeen">
+                        <h2 class="mb-0">
+                            <button type="button" class="btn btn-link collapsed" data-toggle="collapse"
+                                data-target="#collapseSeventeen"><i class="icon_faq icofont-plus"></i></i> What email do I use?
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseSeventeen" class="collapse" aria-labelledby="headingSeventeen"
+                        data-parent="#accordionExample">
+                        <div class="card-body">
+                            <p>
+                                We provide you with a professional email account linked to your own Domain.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="card-header" id="headingEighteen">
+                        <h2 class="mb-0">
+                            <button type="button" class="btn btn-link collapsed" data-toggle="collapse"
+                                data-target="#collapseEighteen"><i class="icon_faq icofont-plus"></i></i> Can I expand my store in the
+                                future?
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseEighteen" class="collapse" aria-labelledby="headingEighteen" data-parent="#accordionExample">
+                        <div class="card-body">
+                            <p>
+                                Absolutely! Your store is scalable, allowing you to add new features, products, or categories as your
+                                business grows.
                             </p>
                         </div>
                     </div>
