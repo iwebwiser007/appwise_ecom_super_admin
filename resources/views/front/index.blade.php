@@ -685,7 +685,7 @@
                             <h3>04</h3>
                         </div>
                         <div class="step_text" data-aos="fade-left" data-aos-duration="1500">
-                            <h4>Our Team Will Reach Out</h4>
+                            <h4>Launch Your Fully Functional eCommerce Website</h4>
                             <p>“Once your store is set up and we will provide ou’ve received basic training, you’ll have a fully
                                 functional eCommerce website with an integrated online payment gateway and courier services. You’ll be
                                 ready to customise it by adding your logo, contact details, and products. You can even enhance your
