@@ -26,14 +26,17 @@
                             your business and customers
                             safe.</li>
                         <li><span class="fw-bold">Easy Setup:</span> Seamlessly integrate Payfast into your e-commerce store
-                            without hassle.
-                            Trusted Partner: Payfast is recognized nationwide for reliability and excellent service.
+                            without hassle.</li>
+                            <li>
+                                <span class="fw-bold">Trusted Partner:</span>
+                                Payfast is recognized nationwide for reliability and excellent service.
                             With Payfast as our trusted payment partner, we ensure your online store delivers a seamless and
-                            secure checkout experience, helping you build customer trust and grow your business.”</li>
+                            secure checkout experience, helping you build customer trust and grow your business.
+                            </li>
                     </ul>
                 </div>
                 <div class="modal-footer">
-                    <a type="button" class="btn white_btn" href="https://payfast.io/" target="_blank">register</a>
+                    <a type="button" class="btn white_btn" href="https://payfast.io/" target="_blank">Register</a>
                 </div>
             </div>
         </div>
@@ -72,7 +75,7 @@
                     ensuring your customers receive their orders on time, every time.
                 </div>
                 <div class="modal-footer">
-                    <a type="button" class="btn white_btn" href="https://thecourierguy.co.za/" target="_blank">register</a>
+                    <a type="button" class="btn white_btn" href="https://thecourierguy.co.za/" target="_blank">Register</a>
                 </div>
             </div>
         </div>
