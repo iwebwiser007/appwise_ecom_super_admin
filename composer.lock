@@ -1046,16 +1046,16 @@
         },
         {
             "name": "google/auth",
-            "version": "v1.45.0",
+            "version": "v1.45.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/googleapis/google-auth-library-php.git",
-                "reference": "cfcb93162341ed5022fa976e621f0fa2b05ba6ad"
+                "reference": "86e9d937632a96b09dc40444c7cb68eb778a6ea6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/googleapis/google-auth-library-php/zipball/cfcb93162341ed5022fa976e621f0fa2b05ba6ad",
-                "reference": "cfcb93162341ed5022fa976e621f0fa2b05ba6ad",
+                "url": "https://api.github.com/repos/googleapis/google-auth-library-php/zipball/86e9d937632a96b09dc40444c7cb68eb778a6ea6",
+                "reference": "86e9d937632a96b09dc40444c7cb68eb778a6ea6",
                 "shasum": ""
             },
             "require": {
@@ -1101,9 +1101,9 @@
             "support": {
                 "docs": "https://googleapis.github.io/google-auth-library-php/main/",
                 "issues": "https://github.com/googleapis/google-auth-library-php/issues",
-                "source": "https://github.com/googleapis/google-auth-library-php/tree/v1.45.0"
+                "source": "https://github.com/googleapis/google-auth-library-php/tree/v1.45.1"
             },
-            "time": "2024-12-11T02:10:48+00:00"
+            "time": "2025-01-22T23:27:35+00:00"
         },
         {
             "name": "google/cloud-core",
@@ -2331,16 +2331,16 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v11.38.2",
+            "version": "v11.39.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "9d290aa90fcad44048bedca5219d2b872e98772a"
+                "reference": "3d693dd36e78121bcd51fc02eda4bc137d2a17f2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/9d290aa90fcad44048bedca5219d2b872e98772a",
-                "reference": "9d290aa90fcad44048bedca5219d2b872e98772a",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/3d693dd36e78121bcd51fc02eda4bc137d2a17f2",
+                "reference": "3d693dd36e78121bcd51fc02eda4bc137d2a17f2",
                 "shasum": ""
             },
             "require": {
@@ -2541,7 +2541,7 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
-            "time": "2025-01-15T00:06:46+00:00"
+            "time": "2025-01-22T17:01:46+00:00"
         },
         {
             "name": "laravel/prompts",
@@ -10369,12 +10369,12 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {},
+    "stability-flags": [],
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
         "php": "^8.2"
     },
-    "platform-dev": {},
+    "platform-dev": [],
     "plugin-api-version": "2.6.0"
 }
