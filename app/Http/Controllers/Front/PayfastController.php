@@ -102,6 +102,9 @@ class PayfastController extends Controller
 
         $transaction_id = 'PF' . strtoupper(Str::random(12));
 
+        $startDate = now(); // Current date
+        $endDate = now()->addDays($package->days);
+
         PackageBuy::create([
             'package_id' => $payfastData['package_id'],
             'shop_owner_id' => $payfastData['owner_id'],
@@ -111,6 +114,8 @@ class PayfastController extends Controller
             'number_of_category' => $package['number_of_category'],
             'number_of_product' => $package['number_of_product'],
             'days' => $package['days'],
+            'start_date' => $startDate,
+            'end_date' => $endDate,
             'status' => 'active',
             'payment_method' => "PayFast",
         ]);

@@ -79,6 +79,8 @@
                             <th>Number Of Product</th>
                             <th>Price</th>
                             <th>Days</th>
+                            <th>Start Date</th>
+                            <th>End Date</th>
                             <th>Status</th>
                             <th>Actions</th>
                         </tr>
@@ -101,6 +103,8 @@
                             <td>{{ $package->number_of_product }}</td>
                             <td>{{ $package->price }}</td>
                             <td>{{ $package->days }}</td>
+                            <td>{{ $package->start_date ?? "N/A" }}</td>
+                            <td>{{ $package->end_date ?? "N/A" }}</td>
                             <td>
                                 @if($package->status == 'active')
                                 <span class="badge bg-success " data-id="

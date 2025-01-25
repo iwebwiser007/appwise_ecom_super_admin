@@ -1,4 +1,5 @@
 @extends('components.front.layouts')
+
 @section('content')
 <!-- Banner-Section-Start -->
 <section class="banner_section">
@@ -29,15 +30,18 @@
                         advanced analytics, all of it at one place is found in our e-commerce system.
                     </p>
                 </div>
+                
                 <!-- app buttons -->
                 <ul class="app_btn">
                     <li>
-                        <a href="https://payfast.io/" target="_blank">
+
+                    <a href="https://payfast.io/ " target="_blank">
                             <button class="btn btn-primary border-0"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="16"
                                     viewBox="0 0 11 16" fill="none">
                                     <path d="M3.81 0H0L6.58 7.82L0.0699997 15.58H3.88L10.39 7.82L3.81 0Z" fill="#E54360" />
                                 </svg> &nbsp; Payfast </button>
-                        </a>
+                    </a>
+
                     </li>
                     <li>
                         <a href="https://thecourierguy.co.za/" target="_blank">
@@ -136,6 +140,7 @@
                         </a>
                     </li>
                 </ul>
+
                 <!-- users -->
                 {{-- <div class="used_app">
                         <ul>
@@ -147,6 +152,7 @@
                 <p>12M + <br> used this app</p>
             </div> --}}
         </div>
+
 
 
         <!-- banner slides start -->
@@ -1016,4 +1022,7 @@
             closeButton.click();
         }
     }, 3000);
+
 </script>
+
+

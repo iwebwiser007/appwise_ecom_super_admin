@@ -143,9 +143,11 @@ class PackageController extends Controller
                     ]);
                 }
                 $packageBuy = $query->with('shopOwner')->get();
+                
                 return view('admin.packages.package_buy', compact('packageBuy'));
             }
         }
+        
 
         $packageBuy = PackageBuy::with('shopOwner')->get();
         return view('admin.packages.package_buy', compact('packageBuy'));
