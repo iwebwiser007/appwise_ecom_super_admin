@@ -1,52 +1,130 @@
 @extends('components.front.layouts')
 
 @section('content')
-<!-- Banner-Section-Start -->
-<section class="banner_section">
-    <!-- container start -->
-    <div class="container">
-        <!-- vertical animation line -->
-        <div class="anim_line">
-            <span><img src="{{ asset('public/front/images/anim_line.png') }}" alt="anim_line"></span>
-            <span><img src="{{ asset('public/front/images/anim_line.png') }}" alt="anim_line"></span>
-            <span><img src="{{ asset('public/front/images/anim_line.png') }}" alt="anim_line"></span>
-            <span><img src="{{ asset('public/front/images/anim_line.png') }}" alt="anim_line"></span>
-            <span><img src="{{ asset('public/front/images/anim_line.png') }}" alt="anim_line"></span>
-            <span><img src="{{ asset('public/front/images/anim_line.png') }}" alt="anim_line"></span>
-            <span><img src="{{ asset('public/front/images/anim_line.png') }}" alt="anim_line"></span>
-            <span><img src="{{ asset('public/front/images/anim_line.png') }}" alt="anim_line"></span>
-            <span><img src="{{ asset('public/front/images/anim_line.png') }}" alt="anim_line"></span>
-        </div>
-        <!-- row start -->
-        <div class="row">
-            <div class="col-lg-6 col-md-12" data-aos="fade-right" data-aos-duration="1500">
-                <!-- banner text -->
-                <div class="banner_text">
-                    <!-- h1 -->
-                    <h1>Grow Your Business Effortlessly With <span>Our E-Commerce System</span></h1>
-                    <!-- p -->
-                    <p>Take your business online with an easy, powerful solution built to simplify your operations,
-                        better the experience of your customer, and improve sales growth. From intuitive design to
-                        advanced analytics, all of it at one place is found in our e-commerce system.
-                    </p>
+    <!-- Banner-Section-Start -->
+    <div class="modal fade" id="payfastpopup" tabindex="-1" aria-labelledby="payfastpopupLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title fs-5 fw-bold" id="payfastpopupLabel">Power Your Store <span
+                            class="text-primary">with Payfast</span></h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                
-                <!-- app buttons -->
-                <ul class="app_btn">
-                    <li>
-
-                    <a href="https://payfast.io/ " target="_blank">
-                            <button class="btn btn-primary border-0"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="16"
-                                    viewBox="0 0 11 16" fill="none">
+                <div class="modal-body">
+                    <p class="mb-3">We’ve partnered with <span class=" fw-bold">Payfast</span>, South
+                        Africa’s leading
+                        online payment
+                        provider, to help merchants like
+                        you run your business smoothly and securely.</p>
+                    <h5 class="mb-2">Why Choose Payfast?</h5>
+                    <ul>
+                        <li>
+                            <span class="fw-bold">Accept Multiple Payment Methods:</span> Offer your customers flexible
+                            options like credit cards, EFT,
+                            and mobile wallets.
+                        </li>  
+                        <li><span class="fw-bold">Secure Transactions:</span> Advanced encryption and fraud detection keep
+                            your business and customers
+                            safe.</li>
+                        <li><span class="fw-bold">Easy Setup:</span> Seamlessly integrate Payfast into your e-commerce store
+                            without hassle.</li>
+                            <li>
+                                <span class="fw-bold">Trusted Partner:</span>
+                                Payfast is recognized nationwide for reliability and excellent service.
+                            With Payfast as our trusted payment partner, we ensure your online store delivers a seamless and
+                            secure checkout experience, helping you build customer trust and grow your business.
+                            </li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <a type="button" class="btn white_btn" href="https://payfast.io/" target="_blank">Register</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="courierguypopup" tabindex="-1" aria-labelledby="courierguypopupLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title fs-5 fw-bold" id="courierguypopupLabel">Reliable Shipping with <span
+                            class="text-primary">The Courier Guy</span></h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="mb-3">We’ve partnered with <span class="fw-bold">The Courier Guy</span>, one of South
+                        Africa’s most trusted courier services, to provide fast, reliable, and cost-effective delivery
+                        solutions for your e-commerce business.
+                    </p>
+                    <h5 class="mb-2">Why Choose The Courier Guy?</h5>
+                    <ul class="mb-3">
+                        <li>
+                            <span class="fw-bold">Nationwide Coverage:</span> Deliver to your customers anywhere in South
+                            Africa.
+                        </li>
+                        <li>
+                            <span class="fw-bold">Fast and Reliable:</span> Ensure prompt deliveries to keep your customers
+                            satisfied.
+                        </li>
+                        <li><span class="fw-bold">Affordable Rates:</span> Competitive pricing to support your business
+                            growth.</li>
+                        <li><span class="fw-bold">Easy Integration:</span>
+                            Seamlessly link your store to The Courier Guy for effortless order fulfillment.</li>
+                        <li><span class="fw-bold">Real-Time Tracking:</span> Keep customers informed with accurate delivery
+                            updates.</li>
+                    </ul>
+                    With The Courier Guy as our logistics partner, you can focus on growing your business while
+                    ensuring your customers receive their orders on time, every time.
+                </div>
+                <div class="modal-footer">
+                    <a type="button" class="btn white_btn" href="https://thecourierguy.co.za/" target="_blank">Register</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="banner_section">
+        <!-- container start -->
+        <div class="container">
+            <!-- vertical animation line -->
+            <div class="anim_line">
+                <span><img src="{{ asset('public/front/images/anim_line.png') }}" alt="anim_line"></span>
+                <span><img src="{{ asset('public/front/images/anim_line.png') }}" alt="anim_line"></span>
+                <span><img src="{{ asset('public/front/images/anim_line.png') }}" alt="anim_line"></span>
+                <span><img src="{{ asset('public/front/images/anim_line.png') }}" alt="anim_line"></span>
+                <span><img src="{{ asset('public/front/images/anim_line.png') }}" alt="anim_line"></span>
+                <span><img src="{{ asset('public/front/images/anim_line.png') }}" alt="anim_line"></span>
+                <span><img src="{{ asset('public/front/images/anim_line.png') }}" alt="anim_line"></span>
+                <span><img src="{{ asset('public/front/images/anim_line.png') }}" alt="anim_line"></span>
+                <span><img src="{{ asset('public/front/images/anim_line.png') }}" alt="anim_line"></span>
+            </div>
+            <!-- row start -->
+            <div class="row">
+                <div class="col-lg-6 col-md-12" data-aos="fade-right" data-aos-duration="1500">
+                    <!-- banner text -->
+                    <div class="banner_text">
+                        <!-- h1 -->
+                        <h1>Grow Your Business Effortlessly With <span>Our E-Commerce System</span></h1>
+                        <!-- p -->
+                        <p>Take your business online with an easy, powerful solution built to simplify your operations,
+                            better the experience of your customer, and improve sales growth. From intuitive design to
+                            advanced analytics, all of it at one place is found in our e-commerce system.
+                        </p>
+                    </div>
+                    <!-- app buttons -->
+                    <ul class="app_btn">
+                        <li>
+                            {{-- <a href="https://payfast.io/" target="_blank"> --}}
+                            <button type="button" class="btn white_btn" data-bs-toggle="modal"
+                                data-bs-target="#payfastpopup"><svg xmlns="http://www.w3.org/2000/svg" width="11"
+                                    height="16" viewBox="0 0 11 16" fill="none">
                                     <path d="M3.81 0H0L6.58 7.82L0.0699997 15.58H3.88L10.39 7.82L3.81 0Z" fill="#E54360" />
                                 </svg> &nbsp; Payfast </button>
-                    </a>
-
-                    </li>
-                    <li>
-                        <a href="https://thecourierguy.co.za/" target="_blank">
-                            <button class="btn white_btn"> <svg xmlns="http://www.w3.org/2000/svg" width="21" height="26"
-                                    viewBox="0 0 21 26" fill="none">
+                            {{-- </a> --}}
+                        </li>
+                        <li>
+                            {{-- <a href="https://thecourierguy.co.za/" target="_blank"> --}}
+                            <button type="button" class="btn white_btn" data-bs-toggle="modal"
+                                data-bs-target="#courierguypopup"> <svg xmlns="http://www.w3.org/2000/svg" width="21"
+                                    height="26" viewBox="0 0 21 26" fill="none">
                                     <g opacity="0.28">
                                         <path
                                             d="M8.6052 10.7783C9.80802 10.7783 10.7846 11.7549 10.7846 12.9577C10.7846 14.1606 9.80802 15.1372 8.6052 15.1372C7.40238 15.1372 6.42578 14.1606 6.42578 12.9577C6.42578 11.7549 7.40238 10.7783 8.6052 10.7783Z"
@@ -137,12 +215,11 @@
                                         d="M19.1286 11.1826L15.8097 10.2089C15.4841 10.1134 15.2977 9.77217 15.3932 9.44665L16.2417 6.55437C16.3372 6.22884 16.6785 6.04244 17.004 6.13795L20.323 7.11165C20.6485 7.20715 20.835 7.54838 20.7394 7.8739L19.891 10.7662C19.7954 11.0917 19.4542 11.2781 19.1286 11.1826Z"
                                         fill="#ED7D31" />
                                 </svg>&nbsp; Courier Guy</button>
-                        </a>
-                    </li>
-                </ul>
-
-                <!-- users -->
-                {{-- <div class="used_app">
+                            {{-- </a> --}}
+                        </li>
+                    </ul>
+                    <!-- users -->
+                    {{-- <div class="used_app">
                         <ul>
                             <li><img src="{{ asset('public/front/images/used01.png') }}" alt="image"></li>
                 <li><img src="{{ asset('public/front/images/used02.png') }}" alt="image"></li>
@@ -151,189 +228,188 @@
                 </ul>
                 <p>12M + <br> used this app</p>
             </div> --}}
+                </div>
+
+
+                <!-- banner slides start -->
+                <div class="col-lg-6 col-md-12" data-aos="fade-in" data-aos-duration="1500">
+                    <div>
+                        <img src="{{ asset('public/front/images/bannermain.png') }}" alt="image">
+                    </div>
+                </div>
+                <!-- banner slides end -->
+            </div>
+            <!-- row end -->
         </div>
+        <!-- container end -->
+    </section>
+    <!-- Banner-Section-end -->
+
+    <!-- Features-Section-Start -->
+    <section class="row_am features_section" id="features">
+        <!-- container start -->
+        <div class="container">
+            <div class="section_title" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100">
+                <!-- h2 -->
+                <h2>Key Functionality of <span>Our Ecommerce App</span></h2>
+                <!-- p -->
+                <p>
+                    Our eCommerce system gives you everything you need to create, manage, and grow your online store. It has
+                    powerful features and a user-friendly interface that make it easy for you to run your business and give
+                    your customers a seamless shopping experience.
+                </p>
+            </div>
+            <div class="feature_detail">
+                <!-- feature box left -->
 
 
+                <!-- feature image -->
+                <div class="feature_img" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100">
+                    <img src="{{ asset('public/front/images/features_frame.png') }}" alt="image">
+                </div>
+                <div class="left_data feature_box">
 
-        <!-- banner slides start -->
-        <div class="col-lg-6 col-md-12" data-aos="fade-in" data-aos-duration="1500">
-            <div>
-                <img src="{{ asset('public/front/images/bannermain.png') }}" alt="image">
+                    <!-- feature box -->
+                    <div class="data_block" data-aos="fade-right" data-aos-duration="1500">
+
+                        <div class="text">
+                            <h4>Customizable storefront</h4>
+                            <p>You can easily create your online store and demonstrate your brand with easy tools and
+                                interactive designs.</p>
+                        </div>
+                    </div>
+
+                    <!-- feature box -->
+                    <div class="data_block" data-aos="fade-right" data-aos-duration="1500">
+                        <div class="text">
+                            <h4>Seamless payment integration</h4>
+                            <p>This system offers your customers multiple payment options and an easy, safe checkout
+                                procedure.</p>
+                        </div>
+                    </div>
+
+
+                    <!-- feature box -->
+                    <div class="data_block" data-aos="fade-left" data-aos-duration="1500">
+
+                        <div class="text">
+                            <h4>Inventory Control</h4>
+                            <p>We offer an intuitive dashboard from where one can track their inventory, manage his or her
+                                products, and update the inventory.</p>
+                        </div>
+                    </div>
+
+                    <!-- feature box -->
+                    <div class="data_block" data-aos="fade-left" data-aos-duration="1500">
+
+                        <div class="text">
+                            <h4>Sales Analytics Overview</h4>
+                            <p>This system helps you understand your business performance and make the right decisions to
+                                boost your growth.</p>
+                        </div>
+                    </div>
+
+                </div>
             </div>
         </div>
-        <!-- banner slides end -->
-    </div>
-    <!-- row end -->
-    </div>
-    <!-- container end -->
-</section>
-<!-- Banner-Section-end -->
+        <!-- container end -->
+    </section>
+    <!-- Features-Section-end -->
 
-<!-- Features-Section-Start -->
-<section class="row_am features_section" id="features">
-    <!-- container start -->
-    <div class="container">
-        <div class="section_title" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100">
-            <!-- h2 -->
-            <h2>Key Functionality of <span>Our Ecommerce App</span></h2>
-            <!-- p -->
-            <p>
-                Our eCommerce system gives you everything you need to create, manage, and grow your online store. It has
-                powerful features and a user-friendly interface that make it easy for you to run your business and give
-                your customers a seamless shopping experience.
-            </p>
-        </div>
-        <div class="feature_detail">
-            <!-- feature box left -->
-
-
-            <!-- feature image -->
-            <div class="feature_img" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100">
-                <img src="{{ asset('public/front/images/features_frame.png') }}" alt="image">
-            </div>
-            <div class="left_data feature_box">
-
-                <!-- feature box -->
-                <div class="data_block" data-aos="fade-right" data-aos-duration="1500">
-
-                    <div class="text">
-                        <h4>Customizable storefront</h4>
-                        <p>You can easily create your online store and demonstrate your brand with easy tools and
-                            interactive designs.</p>
+    <!-- ModernUI-Section-Start -->
+    <section class="row_am modern_ui_section">
+        <!-- container start -->
+        <div class="container">
+            <!-- row start -->
+            <div class="row">
+                <div class="col-lg-6">
+                    <!-- UI content -->
+                    <div class="ui_text">
+                        <div class="section_title" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100">
+                            <h2>Advantage of Our <span>E-Commerce System to Your Business</span></h2>
+                            <p>
+                                Our e-commerce system is designed to streamline activities, enhance customer experiences,
+                                and maximize sales. It provides you with the flexibility and tools to stay competitive in
+                                the ever-evolving online marketplace.
+                            </p>
+                        </div>
+                        <ul class="design_block">
+                            <li data-aos="fade-up" data-aos-duration="1500">
+                                <h4>Growth in sales and conversion</h4>
+                                <p>Our optimized features maximize chances of return customers and increase average order
+                                    value, which will help your store. </p>
+                            </li>
+                            <li data-aos="fade-up" data-aos-duration="1500">
+                                <h4>Cost Efficiency</h4>
+                                <p>You can automate the tracking of inventory, orders, and even reporting, so you have much
+                                    more time to really grow the business.</p>
+                            </li>
+                            <li data-aos="fade-up" data-aos-duration="1500">
+                                <h4>Enhance Customer Experience</h4>
+                                <p>It provides a rapid loading, secure payment, and specific suggestions for a smooth
+                                    purchase without hassle.</p>
+                            </li>
+                        </ul>
                     </div>
                 </div>
-
-                <!-- feature box -->
-                <div class="data_block" data-aos="fade-right" data-aos-duration="1500">
-
-                    <div class="text">
-                        <h4>Seamless payment integration</h4>
-                        <p>This system offers your customers multiple payment options and an easy, safe checkout
-                            procedure.</p>
-                    </div>
-                </div>
-
-
-                <!-- feature box -->
-                <div class="data_block" data-aos="fade-left" data-aos-duration="1500">
-
-                    <div class="text">
-                        <h4>Inventory Control</h4>
-                        <p>We offer an intuitive dashboard from where one can track their inventory, manage his or her
-                            products, and update the inventory.</p>
-                    </div>
-                </div>
-
-                <!-- feature box -->
-                <div class="data_block" data-aos="fade-left" data-aos-duration="1500">
-
-                    <div class="text">
-                        <h4>Sales Analytics Overview</h4>
-                        <p>This system helps you understand your business performance and make the right decisions to
-                            boost your growth.</p>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </div>
-    <!-- container end -->
-</section>
-<!-- Features-Section-end -->
-
-<!-- ModernUI-Section-Start -->
-<section class="row_am modern_ui_section">
-    <!-- container start -->
-    <div class="container">
-        <!-- row start -->
-        <div class="row">
-            <div class="col-lg-6">
-                <!-- UI content -->
-                <div class="ui_text">
-                    <div class="section_title" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100">
-                        <h2>Advantage of Our <span>E-Commerce System to Your Business</span></h2>
-                        <p>
-                            Our e-commerce system is designed to streamline activities, enhance customer experiences,
-                            and maximize sales. It provides you with the flexibility and tools to stay competitive in
-                            the ever-evolving online marketplace.
-                        </p>
-                    </div>
-                    <ul class="design_block">
-                        <li data-aos="fade-up" data-aos-duration="1500">
-                            <h4>Growth in sales and conversion</h4>
-                            <p>Our optimized features maximize chances of return customers and increase average order
-                                value, which will help your store. </p>
-                        </li>
-                        <li data-aos="fade-up" data-aos-duration="1500">
-                            <h4>Cost Efficiency</h4>
-                            <p>You can automate the tracking of inventory, orders, and even reporting, so you have much
-                                more time to really grow the business.</p>
-                        </li>
-                        <li data-aos="fade-up" data-aos-duration="1500">
-                            <h4>Enhance Customer Experience</h4>
-                            <p>It provides a rapid loading, secure payment, and specific suggestions for a smooth
-                                purchase without hassle.</p>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-lg-6">
-                <!-- UI Image -->
-                <div class="ui_images" data-aos="fade-in" data-aos-duration="1500">
-                    {{-- <div class="left_img"> --}}
-                    <img class="moving_position_animatin" src="{{ asset('public/front/images/advantageimg.png') }}" alt="image">
-                    {{-- </div> --}}
+                <div class="col-lg-6">
                     <!-- UI Image -->
-                    {{-- <div class="right_img">
+                    <div class="ui_images" data-aos="fade-in" data-aos-duration="1500">
+                        {{-- <div class="left_img"> --}}
+                        <img class="moving_position_animatin" src="{{ asset('public/front/images/advantageimg.png') }}"
+                            alt="image">
+                        {{-- </div> --}}
+                        <!-- UI Image -->
+                        {{-- <div class="right_img">
                         <img class="moving_position_animatin" src="{{ asset('public/front/images/secure_data.png') }}"
                     alt="image">
                     <img class="moving_position_animatin" src="{{ asset('public/front/images/modern02.png') }}" alt="image">
                     <img class="moving_position_animatin" src="{{ asset('public/front/images/modern03.png') }}" alt="image">
                 </div> --}}
+                    </div>
+                </div>
             </div>
+            <!-- row end -->
         </div>
-    </div>
-    <!-- row end -->
-    </div>
-    <!-- container end -->
-</section>
-<!-- ModernUI-Section-end -->
+        <!-- container end -->
+    </section>
+    <!-- ModernUI-Section-end -->
 
 
 
-<!-- Pricing-Section -->
-<section class="row_am pricing_section" id="pricing">
-    <!-- container start -->
-    <div class="container">
-        <div class="section_title" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">
-            <!-- h2 -->
-            <h2>Select the Perfect <span>Pricing Plan</span></h2>
-            <!-- p -->
-            <p>you can choose a plan that works with your business needs and budget. They are flexible enough to allow
-                you to grow up or scale easily.</p>
-        </div>
-        <!-- toggle button -->
-        <div class="toggle_block" data-aos="fade-up" data-aos-duration="1500">
-            <span class="month active">Monthly</span>
-            <!-- <div class="tog_block">
-                                        <span class="tog_btn"></span>
-                                    </div>
-                                    <span class="years">Yearly</span>
-                                    <span class="offer">50% off</span> -->
-        </div>
+    <!-- Pricing-Section -->
+    <section class="row_am pricing_section" id="pricing">
+        <!-- container start -->
+        <div class="container">
+            <div class="section_title" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">
+                <!-- h2 -->
+                <h2>Select the Perfect <span>Pricing Plan</span></h2>
+                <!-- p -->
+                <p>you can choose a plan that works with your business needs and budget. They are flexible enough to allow
+                    you to grow up or scale easily.</p>
+            </div>
+            <!-- toggle button -->
+            <div class="toggle_block" data-aos="fade-up" data-aos-duration="1500">
+                <span class="month active">Monthly</span>
+                <!-- <div class="tog_block">
+                                                                                                                                                                                <span class="tog_btn"></span>
+                                                                                                                                                                            </div>
+                                                                                                                                                                            <span class="years">Yearly</span>
+                                                                                                                                                                            <span class="offer">50% off</span> -->
+            </div>
 
-        <!-- pricing box  monthly start -->
-        <div class="pricing_pannel monthly_plan active" data-aos="fade-up" data-aos-duration="1500">
-            <!-- row start -->
-            <div class="row">
-                @php
-                $i = 1;
-                @endphp
-                @foreach ($packages as $package)
-                <!-- pricing box 1 -->
-                <div class="col-md-4">
-                    <div class="pricing_block">
-                        {{-- <div class="icon">
+            <!-- pricing box  monthly start -->
+            <div class="pricing_pannel monthly_plan active" data-aos="fade-up" data-aos-duration="1500">
+                <!-- row start -->
+                <div class="row">
+                    @php
+                        $i = 1;
+                    @endphp
+                    @foreach ($packages as $package)
+                        <!-- pricing box 1 -->
+                        <div class="col-md-4">
+                            <div class="pricing_block">
+                                {{-- <div class="icon">
                                     @if ($i % 3 == 1)
                                         <img src="{{ asset('public/front/images/standard.png') }}" alt="image">
                         @elseif($i % 3 == 2)
@@ -342,676 +418,950 @@
                         <img src="{{ asset('public/front/images/premium.png') }}" alt="image">
                         @endif
                     </div> --}}
-                    <div class="pkg_name">
-                        <h3>{{ $package['name'] }}</h3>
-                        <span>{{ $package['description'] }}</span>
-                    </div>
-                    <span class="price">R{{ $package['price'] }}</span>
-                    <ul class="benifits">
-                        <li>
-                            <p>Number of section add : {{ $package['number_of_section'] }}</p>
+                                <div class="pkg_name">
+                                    <h3>{{ $package['name'] }}</h3>
+                                    <span>{{ $package['description'] }}</span>
+                                </div>
+                                <span class="price">R{{ $package['price'] }}</span>
+                                <ul class="benifits">
+                                    <li>
+                                        <p>Number of section add : {{ $package['number_of_section'] }}</p>
 
-                        </li>
-                        <li>
-                            <p>Number of category add : {{ $package['number_of_category'] }}</p>
-                        </li>
-                        <li>
-                            <p>Number of product add : {{ $package['number_of_product'] }}</p>
-                        </li>
-                        <li>
-                            <p>Days : {{ $package['days'] }}</p>
-                        </li>
-                        <li>
-                            <a href="#inquiry">Support on request</a>
-                        </li>
-                    </ul>
-                    <div>
-                        <a data-bs-toggle="modal" data-bs-target="#buyNowModal" class="btn white_btn buy-now-btn"
-                            data-route="{{ route('package.saveOwnerDetails', $package->id) }}" data-name="{{ $package['name'] }}">BUY
-                            NOW</a>
-                    </div>
+                                    </li>
+                                    <li>
+                                        <p>Number of category add : {{ $package['number_of_category'] }}</p>
+                                    </li>
+                                    <li>
+                                        <p>Number of product add : {{ $package['number_of_product'] }}</p>
+                                    </li>
+                                    <li>
+                                        <p>Days : {{ $package['days'] }}</p>
+                                    </li>
+                                    <li>
+                                        <a href="#inquiry">Support on request</a>
+                                    </li>
+                                </ul>
+                                <div>
+                                    <a data-bs-toggle="modal" data-bs-target="#buyNowModal"
+                                        class="btn white_btn buy-now-btn"
+                                        data-route="{{ route('package.saveOwnerDetails', $package->id) }}"
+                                        data-name="{{ $package['name'] }}">BUY
+                                        NOW</a>
+                                </div>
 
 
+                            </div>
+                        </div>
+                        @php
+                            $i = $i + 1;
+                        @endphp
+                    @endforeach
+
+                    <!-- pricing box 2 -->
+                    <!-- <div class="col-md-4">
+                                                                                                                                                                                                                                                                                                                                                                                <div class="pricing_block highlited_block">
+                                                                                                                                                                                                                                                                                                                                                                                    <div class="icon">
+                                                                                                                                                                                                                                                                                                                                                                                        <img src="{{ asset('public/front/images/unlimited.png') }}" alt="image">
+                                                                                                                                                                                                                                                                                                                                                                                    </div>
+                                                                                                                                                                                                                                                                                                                                                                                    <div class="pkg_name">
+                                                                                                                                                                                                                                                                                                                                                                                        <h3>Unlimited</h3>
+                                                                                                                                                                                                                                                                                                                                                                                        <span>For the professionals</span>
+                                                                                                                                                                                                                                                                                                                                                                                    </div>
+                                                                                                                                                                                                                                                                                                                                                                                    <span class="price">$99</span>
+                                                                                                                                                                                                                                                                                                                                                                                    <ul class="benifits">
+                                                                                                                                                                                                                                                                                                                                                                                        <li>
+                                                                                                                                                                                                                                                                                                                                                                                            <p>Unlimited Website</p>
+                                                                                                                                                                                                                                                                                                                                                                                        </li>
+                                                                                                                                                                                                                                                                                                                                                                                        <li>
+                                                                                                                                                                                                                                                                                                                                                                                            <p>200 GB disk space</p>
+                                                                                                                                                                                                                                                                                                                                                                                        </li>
+                                                                                                                                                                                                                                                                                                                                                                                        <li>
+                                                                                                                                                                                                                                                                                                                                                                                            <p>20 Customize sub pages</p>
+                                                                                                                                                                                                                                                                                                                                                                                        </li>
+                                                                                                                                                                                                                                                                                                                                                                                        <li>
+                                                                                                                                                                                                                                                                                                                                                                                            <p>10 Domains access</p>
+                                                                                                                                                                                                                                                                                                                                                                                        </li>
+                                                                                                                                                                                                                                                                                                                                                                                        <li>
+                                                                                                                                                                                                                                                                                                                                                                                            <p>24/7 Customer support</p>
+                                                                                                                                                                                                                                                                                                                                                                                        </li>
+                                                                                                                                                                                                                                                                                                                                                                                    </ul>
+                                                                                                                                                                                                                                                                                                                                                                                    <a href="contact.html" class="btn white_btn">BUY NOW</a>
+                                                                                                                                                                                                                                                                                                                                                                                </div>
+                                                                                                                                                                                                                                                                                                                                                                            </div> -->
+
+                    <!-- pricing box 3 -->
+                    <!-- <div class="col-md-4">
+                                                                                                                                                                                                                                                                                                                                                                                <div class="pricing_block">
+                                                                                                                                                                                                                                                                                                                                                                                    <div class="icon">
+                                                                                                                                                                                                                                                                                                                                                                                        <img src="{{ asset('public/front/images/premium.png') }}" alt="image">
+                                                                                                                                                                                                                                                                                                                                                                                    </div>
+                                                                                                                                                                                                                                                                                                                                                                                    <div class="pkg_name">
+                                                                                                                                                                                                                                                                                                                                                                                        <h3>Premium</h3>
+                                                                                                                                                                                                                                                                                                                                                                                        <span>For small team</span>
+                                                                                                                                                                                                                                                                                                                                                                                    </div>
+                                                                                                                                                                                                                                                                                                                                                                                    <span class="price">$55</span>
+                                                                                                                                                                                                                                                                                                                                                                                    <ul class="benifits">
+                                                                                                                                                                                                                                                                                                                                                                                        <li>
+                                                                                                                                                                                                                                                                                                                                                                                            <p>Up to 10 Website</p>
+                                                                                                                                                                                                                                                                                                                                                                                        </li>
+                                                                                                                                                                                                                                                                                                                                                                                        <li>
+                                                                                                                                                                                                                                                                                                                                                                                            <p>100 GB disk space</p>
+                                                                                                                                                                                                                                                                                                                                                                                        </li>
+                                                                                                                                                                                                                                                                                                                                                                                        <li>
+                                                                                                                                                                                                                                                                                                                                                                                            <p>15 Customize sub pages</p>
+                                                                                                                                                                                                                                                                                                                                                                                        </li>
+                                                                                                                                                                                                                                                                                                                                                                                        <li>
+                                                                                                                                                                                                                                                                                                                                                                                            <p>4 Domains access</p>
+                                                                                                                                                                                                                                                                                                                                                                                        </li>
+                                                                                                                                                                                                                                                                                                                                                                                        <li>
+                                                                                                                                                                                                                                                                                                                                                                                            <p>24/7 Customer support</p>
+                                                                                                                                                                                                                                                                                                                                                                                        </li>
+                                                                                                                                                                                                                                                                                                                                                                                    </ul>
+                                                                                                                                                                                                                                                                                                                                                                                    <a href="contact.html" class="btn white_btn">BUY NOW</a>
+                                                                                                                                                                                                                                                                                                                                                                                </div>
+                                                                                                                                                                                                                                                                                                                                                                            </div> -->
                 </div>
+                <!-- row end -->
             </div>
-            @php
-            $i = $i + 1;
-            @endphp
-            @endforeach
+            <!-- pricing box monthly end -->
 
-            <!-- pricing box 2 -->
-            <!-- <div class="col-md-4">
-                                                                                                                                                                                                                                        <div class="pricing_block highlited_block">
-                                                                                                                                                                                                                                            <div class="icon">
-                                                                                                                                                                                                                                                <img src="{{ asset('public/front/images/unlimited.png') }}" alt="image">
-                                                                                                                                                                                                                                            </div>
-                                                                                                                                                                                                                                            <div class="pkg_name">
-                                                                                                                                                                                                                                                <h3>Unlimited</h3>
-                                                                                                                                                                                                                                                <span>For the professionals</span>
-                                                                                                                                                                                                                                            </div>
-                                                                                                                                                                                                                                            <span class="price">$99</span>
-                                                                                                                                                                                                                                            <ul class="benifits">
-                                                                                                                                                                                                                                                <li>
-                                                                                                                                                                                                                                                    <p>Unlimited Website</p>
-                                                                                                                                                                                                                                                </li>
-                                                                                                                                                                                                                                                <li>
-                                                                                                                                                                                                                                                    <p>200 GB disk space</p>
-                                                                                                                                                                                                                                                </li>
-                                                                                                                                                                                                                                                <li>
-                                                                                                                                                                                                                                                    <p>20 Customize sub pages</p>
-                                                                                                                                                                                                                                                </li>
-                                                                                                                                                                                                                                                <li>
-                                                                                                                                                                                                                                                    <p>10 Domains access</p>
-                                                                                                                                                                                                                                                </li>
-                                                                                                                                                                                                                                                <li>
-                                                                                                                                                                                                                                                    <p>24/7 Customer support</p>
-                                                                                                                                                                                                                                                </li>
-                                                                                                                                                                                                                                            </ul>
-                                                                                                                                                                                                                                            <a href="contact.html" class="btn white_btn">BUY NOW</a>
-                                                                                                                                                                                                                                        </div>
-                                                                                                                                                                                                                                    </div> -->
+            <!-- pricing box yearly start -->
+            <div class="pricing_pannel yearly_plan">
+                <div class="row">
 
-            <!-- pricing box 3 -->
-            <!-- <div class="col-md-4">
-                                                                                                                                                                                                                                        <div class="pricing_block">
-                                                                                                                                                                                                                                            <div class="icon">
-                                                                                                                                                                                                                                                <img src="{{ asset('public/front/images/premium.png') }}" alt="image">
-                                                                                                                                                                                                                                            </div>
-                                                                                                                                                                                                                                            <div class="pkg_name">
-                                                                                                                                                                                                                                                <h3>Premium</h3>
-                                                                                                                                                                                                                                                <span>For small team</span>
-                                                                                                                                                                                                                                            </div>
-                                                                                                                                                                                                                                            <span class="price">$55</span>
-                                                                                                                                                                                                                                            <ul class="benifits">
-                                                                                                                                                                                                                                                <li>
-                                                                                                                                                                                                                                                    <p>Up to 10 Website</p>
-                                                                                                                                                                                                                                                </li>
-                                                                                                                                                                                                                                                <li>
-                                                                                                                                                                                                                                                    <p>100 GB disk space</p>
-                                                                                                                                                                                                                                                </li>
-                                                                                                                                                                                                                                                <li>
-                                                                                                                                                                                                                                                    <p>15 Customize sub pages</p>
-                                                                                                                                                                                                                                                </li>
-                                                                                                                                                                                                                                                <li>
-                                                                                                                                                                                                                                                    <p>4 Domains access</p>
-                                                                                                                                                                                                                                                </li>
-                                                                                                                                                                                                                                                <li>
-                                                                                                                                                                                                                                                    <p>24/7 Customer support</p>
-                                                                                                                                                                                                                                                </li>
-                                                                                                                                                                                                                                            </ul>
-                                                                                                                                                                                                                                            <a href="contact.html" class="btn white_btn">BUY NOW</a>
-                                                                                                                                                                                                                                        </div>
-                                                                                                                                                                                                                                    </div> -->
-        </div>
-        <!-- row end -->
-    </div>
-    <!-- pricing box monthly end -->
-
-    <!-- pricing box yearly start -->
-    <div class="pricing_pannel yearly_plan">
-        <div class="row">
-
-            <!-- pricing box 1 -->
-            <div class="col-md-4">
-                <div class="pricing_block">
-                    {{-- <div class="icon">
+                    <!-- pricing box 1 -->
+                    <div class="col-md-4">
+                        <div class="pricing_block">
+                            {{-- <div class="icon">
                                 <img src="{{ asset('public/front/images/standard.png') }}" alt="image">
                 </div> --}}
-                <div class="pkg_name">
-                    <h3>Standard</h3>
-                    <span>For the basics</span>
-                </div>
-                <span class="price">$150</span>
-                <ul class="benifits">
-                    <li>
-                        <p>Up to 10 Website</p>
-                    </li>
-                    <li>
-                        <p>100 GB disk space</p>
-                    </li>
-                    <li>
-                        <p>25 Customize sub pages</p>
-                    </li>
-                    <li>
-                        <p>4 Domains access</p>
-                    </li>
-                    <li>
-                        <p>Support on request</p>
-                    </li>
-                </ul>
-                <a href="contact.html" class="btn white_btn">BUY NOW</a>
-            </div>
-        </div>
+                            <div class="pkg_name">
+                                <h3>Standard</h3>
+                                <span>For the basics</span>
+                            </div>
+                            <span class="price">$150</span>
+                            <ul class="benifits">
+                                <li>
+                                    <p>Up to 10 Website</p>
+                                </li>
+                                <li>
+                                    <p>100 GB disk space</p>
+                                </li>
+                                <li>
+                                    <p>25 Customize sub pages</p>
+                                </li>
+                                <li>
+                                    <p>4 Domains access</p>
+                                </li>
+                                <li>
+                                    <p>Support on request</p>
+                                </li>
+                            </ul>
+                            <a href="contact.html" class="btn white_btn">BUY NOW</a>
+                        </div>
+                    </div>
 
-        <!-- pricing box 2 -->
-        <div class="col-md-4">
-            <div class="pricing_block highlited_block">
-                {{-- <div class="icon">
+                    <!-- pricing box 2 -->
+                    <div class="col-md-4">
+                        <div class="pricing_block highlited_block">
+                            {{-- <div class="icon">
                                 <img src="{{ asset('public/front/images/unlimited.png') }}" alt="image">
             </div> --}}
-            <div class="pkg_name">
-                <h3>Unlimited</h3>
-                <span>For the professionals</span>
-            </div>
-            <span class="price">$999</span>
-            <ul class="benifits">
-                <li>
-                    <p>Unlimited Website</p>
-                </li>
-                <li>
-                    <p>400 GB disk space</p>
-                </li>
-                <li>
-                    <p>40 Customize sub pages</p>
-                </li>
-                <li>
-                    <p>20 Domains access</p>
-                </li>
-                <li>
-                    <p>24/7 Customer support</p>
-                </li>
-            </ul>
-            <a href="contact.html" class="btn white_btn">BUY NOW</a>
-        </div>
-    </div>
+                            <div class="pkg_name">
+                                <h3>Unlimited</h3>
+                                <span>For the professionals</span>
+                            </div>
+                            <span class="price">$999</span>
+                            <ul class="benifits">
+                                <li>
+                                    <p>Unlimited Website</p>
+                                </li>
+                                <li>
+                                    <p>400 GB disk space</p>
+                                </li>
+                                <li>
+                                    <p>40 Customize sub pages</p>
+                                </li>
+                                <li>
+                                    <p>20 Domains access</p>
+                                </li>
+                                <li>
+                                    <p>24/7 Customer support</p>
+                                </li>
+                            </ul>
+                            <a href="contact.html" class="btn white_btn">BUY NOW</a>
+                        </div>
+                    </div>
 
-    <!-- pricing box 3 -->
-    <div class="col-md-4">
-        <div class="pricing_block">
-            {{-- <div class="icon">
+                    <!-- pricing box 3 -->
+                    <div class="col-md-4">
+                        <div class="pricing_block">
+                            {{-- <div class="icon">
                                 <img src="{{ asset('public/front/images/premium.png') }}" alt="image">
         </div> --}}
-        <div class="pkg_name">
-            <h3>Premium</h3>
-            <span>For small team</span>
-        </div>
-        <span class="price">$550</span>
-        <ul class="benifits">
-            <li>
-                <p>Up to 20 Website</p>
-            </li>
-            <li>
-                <p>200 GB disk space</p>
-            </li>
-            <li>
-                <p>25 Customize sub pages</p>
-            </li>
-            <li>
-                <p>8 Domains access</p>
-            </li>
-            <li>
-                <p>24/7 Customer support</p>
-            </li>
-        </ul>
-        <a href="contact.html" class="btn white_btn">BUY NOW</a>
-    </div>
-    </div>
-
-    </div>
-    </div>
-    <!-- pricing box yearly end -->
-
-    <p class="contact_text" data-aos="fade-up" data-aos-duration="1500">Not sure what to choose ? <a href="#inquiry">Get
-            Quote </a> for custom packages</p>
-    </div>
-    <!-- container start end -->
-</section>
-<!-- Pricing-Section end -->
-
-<!-- Beautifull-interface-Section start -->
-<section class="row_am interface_section">
-    <!-- container start -->
-    <div class="container-fluid">
-        <div class="section_title" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">
-            <!-- h2 -->
-            <h2>Beautiful Interface Designed for <span>Seamless Shopping</span></h2>
-            <!-- p -->
-            <p>
-                With an interactive design and smooth navigation, your store will provide an exceptional shopping
-                experience that keeps customers coming back for more. The interfaces allow smooth navigation through all
-                levels of the journey.
-            </p>
-        </div>
-
-        <!-- screen slider start -->
-        <div class="screen_slider">
-            <div id="screen_slider" class="owl-carousel owl-theme">
-                @php
-                $images = ['image1.png', 'image2.png', 'image3.png', 'image4.png', 'image5.png', 'image6.png'];
-                @endphp
-                @foreach ($images as $image)
-                <div class="item">
-                    <div class="screen_frame_img">
-                        <img src="{{ asset('public/front/images/' . $image) }}" alt="image">
+                            <div class="pkg_name">
+                                <h3>Premium</h3>
+                                <span>For small team</span>
+                            </div>
+                            <span class="price">$550</span>
+                            <ul class="benifits">
+                                <li>
+                                    <p>Up to 20 Website</p>
+                                </li>
+                                <li>
+                                    <p>200 GB disk space</p>
+                                </li>
+                                <li>
+                                    <p>25 Customize sub pages</p>
+                                </li>
+                                <li>
+                                    <p>8 Domains access</p>
+                                </li>
+                                <li>
+                                    <p>24/7 Customer support</p>
+                                </li>
+                            </ul>
+                            <a href="contact.html" class="btn white_btn">BUY NOW</a>
+                        </div>
                     </div>
+
                 </div>
-                @endforeach
-                <!-- <div class="item">
-                        <div class="screen_frame_img">
-                            <img src="{{ asset('public/front/images/features_frame.png') }}" alt="image">
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="screen_frame_img">
-                            <img src="{{ asset('public/front/images/features_frame.png') }}" alt="image">
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="screen_frame_img">
-                            <img src="{{ asset('public/front/images/features_frame.png') }}" alt="image">
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="screen_frame_img">
-                            <img src="{{ asset('public/front/images/features_frame.png') }}" alt="image">
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="screen_frame_img">
-                            <img src="{{ asset('public/front/images/features_frame.png') }}" alt="image">
-                        </div>
-                    </div> -->
             </div>
+            <!-- pricing box yearly end -->
+
+            <p class="contact_text" data-aos="fade-up" data-aos-duration="1500">Not sure what to choose ? <a
+                    href="#inquiry">Get
+                    Quote </a> for custom packages</p>
         </div>
-        <!-- screen slider end -->
-    </div>
-    <!-- container end -->
-</section>
-<!-- Beautifull-interface-Section end -->
-<!-- How-It-Workes-Section-Start -->
-<section class="row_am how_it_works" id="how_it_work">
-    <!-- container start -->
-    <div class="container">
-        <div class="how_it_inner">
+        <!-- container start end -->
+    </section>
+    <!-- Pricing-Section end -->
+
+    <!-- Beautifull-interface-Section start -->
+    <section class="row_am interface_section">
+        <!-- container start -->
+        <div class="container-fluid">
             <div class="section_title" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">
                 <!-- h2 -->
-                <h2>How to Get Your <span>ECommerce Store</span></h2>
+                <h2>Beautiful Interface Designed for <span>Seamless Shopping</span></h2>
                 <!-- p -->
-                <p>Follow these simple steps to get started with your e-commerce store development. Our team will help
-                    you through this process to provide a perfect solution for your business.</p>
+                <p>
+                    With an interactive design and smooth navigation, your store will provide an exceptional shopping
+                    experience that keeps customers coming back for more. The interfaces allow smooth navigation through all
+                    levels of the journey.
+                </p>
             </div>
-            <div class="step_block">
-                <!-- UL -->
-                <ul>
-                    <!-- step -->
-                    <li>
-                        <div class="step_text" data-aos="fade-right" data-aos-duration="1500">
-                            <h4>Fill the Application Form</h4>
-                            <div class="app_icon">
-                                <a href="#"><i class="icofont-brand-android-robot"></i></a>
-                                <a href="#"><i class="icofont-brand-apple"></i></a>
-                                <a href="#"><i class="icofont-brand-windows"></i></a>
+
+            <!-- screen slider start -->
+            <div class="screen_slider">
+                <div id="screen_slider" class="owl-carousel owl-theme">
+                    @php
+                        $images = ['image1.png', 'image2.png', 'image3.png', 'image4.png', 'image5.png', 'image6.png'];
+                    @endphp
+                    @foreach ($images as $image)
+                        <div class="item">
+                            <div class="screen_frame_img">
+                                <img src="{{ asset('public/front/images/' . $image) }}" alt="image">
                             </div>
-                            <p>Please fill out the form below with basic details of you and your company as well as
-                                queries you may have.</p>
                         </div>
-                        <div class="step_number">
-                            <h3>01</h3>
-                        </div>
-                        <div class="step_img" data-aos="fade-left" data-aos-duration="1500">
-                            <img src="{{ asset('public/front/images/download_app.jpg') }}" alt="image">
-                        </div>
-                    </li>
-
-                    <!-- step -->
-                    <li>
-                        <div class="step_text" data-aos="fade-left" data-aos-duration="1500">
-                            <h4>Our Team Will Reach Out</h4>
-                            <p>Once we receive your form, our team will contact you in order to address your queries and
-                                talk about how we can help you set up an ideal e-commerce system for your business.
-                            </p>
-                        </div>
-                        <div class="step_number">
-                            <h3>02</h3>
-                        </div>
-                        <div class="step_img" data-aos="fade-right" data-aos-duration="1500">
-                            <img src="{{ asset('public/front/images/create_account.jpg') }}" alt="image">
-                        </div>
-                    </li>
-                    <!-- step -->
-                    <li>
-                        <div class="step_text" data-aos="fade-right" data-aos-duration="1500">
-                            <h4>Meeting with Team</h4>
-                            <p>We will have a meeting with our team in order to discuss your needs, outline the
-                                capabilities of our system, and tailor the best solution for your business.</p>
-                        </div>
-                        <div class="step_number">
-                            <h3>03</h3>
-                        </div>
-                        <div class="step_img" data-aos="fade-left" data-aos-duration="1500">
-                            <img src="{{ asset('public/front/images/enjoy_app.jpg') }}" alt="image">
-                        </div>
-                    </li>
-                </ul>
+                    @endforeach
+                    <!-- <div class="item">
+                                                                                                                                                                <div class="screen_frame_img">
+                                                                                                                                                                    <img src="{{ asset('public/front/images/features_frame.png') }}" alt="image">
+                                                                                                                                                                </div>
+                                                                                                                                                            </div>
+                                                                                                                                                            <div class="item">
+                                                                                                                                                                <div class="screen_frame_img">
+                                                                                                                                                                    <img src="{{ asset('public/front/images/features_frame.png') }}" alt="image">
+                                                                                                                                                                </div>
+                                                                                                                                                            </div>
+                                                                                                                                                            <div class="item">
+                                                                                                                                                                <div class="screen_frame_img">
+                                                                                                                                                                    <img src="{{ asset('public/front/images/features_frame.png') }}" alt="image">
+                                                                                                                                                                </div>
+                                                                                                                                                            </div>
+                                                                                                                                                            <div class="item">
+                                                                                                                                                                <div class="screen_frame_img">
+                                                                                                                                                                    <img src="{{ asset('public/front/images/features_frame.png') }}" alt="image">
+                                                                                                                                                                </div>
+                                                                                                                                                            </div>
+                                                                                                                                                            <div class="item">
+                                                                                                                                                                <div class="screen_frame_img">
+                                                                                                                                                                    <img src="{{ asset('public/front/images/features_frame.png') }}" alt="image">
+                                                                                                                                                                </div>
+                                                                                                                                                            </div> -->
+                </div>
             </div>
+            <!-- screen slider end -->
         </div>
-
-
-    </div>
-    <!-- container end -->
-</section>
-<!-- How-It-Workes-Section-end -->
-
-<section class="contact_page_section" id="inquiry">
-    <div class="container">
-        <div class="contact_inner">
-            <div class="contact_form">
-                @if (Session::has('success_message'))
-                <div class="landing-successmsg">
-                    <div class="alert alert-success alert-dismissible fade show mt-3" role="alert" id="successMessage">
-                        <strong>Success:</strong> {{ Session::get('success_message') }}
-                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-                    </div>
+        <!-- container end -->
+    </section>
+    <!-- Beautifull-interface-Section end -->
+    <!-- How-It-Workes-Section-Start -->
+    <section class="row_am how_it_works" id="how_it_work">
+        <!-- container start -->
+        <div class="container">
+            <div class="how_it_inner">
+                <div class="section_title" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">
+                    <!-- h2 -->
+                    <h2>How to Get Your <span>ECommerce Store</span></h2>
+                    <!-- p -->
+                    <p>Follow these simple steps to get started with your e-commerce store development. Our team will help
+                        you through this process to provide a perfect solution for your business.</p>
                 </div>
-                @endif
-                <div class="section_title">
-                    <h2>Get Your <span>Online Store</span></h2>
-                    <p>Fill out the form below to share your details and queries. Our team will get in touch with you.
-                    </p>
+                <div class="step_block">
+                    <!-- UL -->
+                    <ul>
+                        <!-- step -->
+                        <li>
+                            <div class="step_text" data-aos="fade-right" data-aos-duration="1500">
+                                <h4>Fill the Application Form</h4>
+                                <div class="app_icon">
+                                    <a href="#"><i class="icofont-brand-android-robot"></i></a>
+                                    <a href="#"><i class="icofont-brand-apple"></i></a>
+                                    <a href="#"><i class="icofont-brand-windows"></i></a>
+                                </div>
+                                <p>Please fill out the form below with basic details of you and your company as well as
+                                    queries you may have.</p>
+                            </div>
+                            <div class="step_number">
+                                <h3>01</h3>
+                            </div>
+                            <div class="step_img" data-aos="fade-left" data-aos-duration="1500">
+                                <img src="{{ asset('public/front/images/download_app.jpg') }}" alt="image">
+                            </div>
+                        </li>
+
+                        <!-- step -->
+                        <li>
+                            <div class="step_text" data-aos="fade-left" data-aos-duration="1500">
+                                <h4>Our Team Will Reach Out</h4>
+                                <p>Once we receive your form, a local team member will contact you to address any queries
+                                    and collaborate
+                                    on crafting the perfect e-commerce solution for your business.
+                                </p>
+                            </div>
+                            <div class="step_number">
+                                <h3>02</h3>
+                            </div>
+                            <div class="step_img" data-aos="fade-right" data-aos-duration="1500">
+                                <img src="{{ asset('public/front/images/create_account.jpg') }}" alt="image">
+                            </div>
+                        </li>
+                        <!-- step -->
+                        <li>
+                            <div class="step_text" data-aos="fade-right" data-aos-duration="1500">
+                                <h4>Meeting with Team</h4>
+                                <p>We’ll handle everything to get your online store up and running, including domain
+                                    registration, website
+                                    setup, payment and courier integrations, and delivering a fully operational eCommerce
+                                    platform ready for
+                                    you to customize and upload your products.</p>
+                            </div>
+                            <div class="step_number">
+                                <h3>03</h3>
+                            </div>
+                            <div class="step_img" data-aos="fade-left" data-aos-duration="1500">
+                                <img src="{{ asset('public/front/images/enjoy_app.jpg') }}" alt="image">
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="step_img" data-aos="fade-right" data-aos-duration="1500">
+                                <img src="{{ asset('public/front/images/create_account.jpg') }}" alt="image">
+                            </div>
+                            <div class="step_number">
+                                <h3>04</h3>
+                            </div>
+                            <div class="step_text" data-aos="fade-left" data-aos-duration="1500">
+                                <h4>Launch Your Fully Functional eCommerce Website</h4>
+                                <p>“Once your store is set up and we will provide you with basic training, you’ll have a
+                                    fully functional eCommerce website with an integrated online payment gateway and courier
+                                    services. You’ll be ready to customize it by adding your logo, contact details, and
+                                    products. You can even enhance your marketing by adding social media links via the back
+                                    end, allowing you to start trading immediately.”
+                                </p>
+                            </div>
+                        </li>
+
+                    </ul>
                 </div>
-                <form action="{{ url('inquiry-submit') }}" method="POST" data-parsley-validate>
-                    @csrf
-                    <div class="form-group">
-                        <input type="text" placeholder="Name" class="form-control" name="name" data-parsley-required="true"
-                            data-parsley-trigger="change">
-                    </div>
-                    <div class="form-group">
-                        <input type="email" placeholder="Email" class="form-control" name="email" data-parsley-required="true"
-                            data-parsley-type="email" data-parsley-trigger="change">
-                    </div>
-                    <!-- <div class="form-group">
-                                                    <input type="text" placeholder="Company Name" class="form-control">
-                                                </div> -->
-                    <!-- <div class="form-group">
-                                                    <select class="form-control">
-                                                        <option value="">Country</option>
-                                                    </select>
-                                                </div> -->
-                    <div class="form-group">
-                        <input type="text" placeholder="Phone" class="form-control" name="phone" data-parsley-required="true"
-                            data-parsley-type="digits" data-parsley-length="[10, 15]"
-                            data-parsley-length-message="Phone number must be between 10 to 15 digits" data-parsley-trigger="change">
-                    </div>
-                    <div class="form-group">
-                        <input type="text" placeholder="Address" class="form-control" name="address" data-parsley-required="true"
-                            data-parsley-trigger="change">
-                    </div>
-                    <div class="form-group">
-                        <textarea class="form-control" placeholder="Your message" name="message" data-parsley-required="true"
-                            data-parsley-trigger="change"></textarea>
-                    </div>
-                    <!-- <div class="form-group term_check">
-                        <input type="checkbox" id="term">
-                        <label for="term">I agree to receive emails, newsletters and promotional messages</label>
-                    </div> -->
-                    <div class="form-group mb-0 text-center">
-                        <button type="submit" class="btn puprple_btn">SEND MESSAGE</button>
-                    </div>
-                </form>
             </div>
-            <div class="contact_info">
-                <div class="icon"><img src="{{ asset('public/front/images/contact_message_icon.png') }}" alt="image"></div>
-                <div class="section_title">
-                    <h2>Have a <span>question?</span></h2>
-                    <p>We're here to help! Reach out to our team, and we'll provide the answers you need to get started
-                        with your e-commerce system.</p>
-                </div>
-                <a href="#faq" class="btn puprple_btn">READ FAQ</a>
-                <ul class="contact_info_list">
-                    <li>
-                        <div class="img">
-                            <img src="{{ asset('public/front/images/mail_icon.png') }}" alt="image">
-                        </div>
-                        <div class="text">
-                            <span>Email Us</span>
-                            <a href="#">{{ $users[0]->email }}</a>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="img">
-                            <img src="{{ asset('public/front/images/call_icon.png') }}" alt="image">
-                        </div>
-                        <div class="text">
-                            <span>Call Us</span>
-                            <a href="#">{{ $users[0]->mobile }}</a>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="img">
-                            <img src="{{ asset('public/front/images/location_icon.png') }}" alt="image">
-                        </div>
-                        <div class="text">
-                            <span>Visit Us</span>
-                            <p>{{ $users[0]->address }}</p>
-                        </div>
-                    </li>
-                </ul>
-            </div>
+
+
         </div>
-    </div>
-    </div>
-    <!-- container end -->
-</section>
-<!-- How-It-Workes-Section-end -->
+        <!-- container end -->
+    </section>
+    <!-- How-It-Workes-Section-end -->
 
-<!-- FAQ-Section start -->
-<section class="row_am faq_section" id="faq">
-    <!-- container start -->
-    <div class="container">
-        <div class="section_title" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">
-            <!-- h2 -->
-            <h2><span>FAQ</span> - Frequently Asked Questions</h2>
-            <!-- p -->
-            <p></p>
-        </div>
-        <!-- faq data -->
-        <div class="faq_panel">
-            <div class="accordion" id="accordionExample">
-                <div class="card" data-aos="fade-up" data-aos-duration="1500">
-                    <div class="card-header" id="headingOne">
-                        <h2 class="mb-0">
-                            <button type="button" class="btn btn-link active" data-toggle="collapse" data-target="#collapseOne">
-                                <i class="icon_faq icofont-plus"></i></i>What is an eCommerce system, and how can it
-                                benefit my business?</button>
-                        </h2>
-                    </div>
-                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-                        <div class="card-body">
-                            <p>An eCommerce system enables an individual to build and then run an online shop and
-                                simplify operations, track sales, and improve the quality of customer experiences. It
-                                grows your business through the automation of processes and information accessibility.
-                            </p>
+    <section class="contact_page_section" id="inquiry">
+        <div class="container">
+            <div class="contact_inner">
+                <div class="contact_form">
+                    @if (Session::has('success_message'))
+                        <div class="landing-successmsg">
+                            <div class="alert alert-success alert-dismissible fade show mt-3" role="alert"
+                                id="successMessage">
+                                <strong>Success:</strong> {{ Session::get('success_message') }}
+                                <button type="button" class="btn-close" data-bs-dismiss="alert"
+                                    aria-label="Close"></button>
+                            </div>
                         </div>
+                    @endif
+                    <div class="section_title">
+                        <h2>Get Your <span>Online Store</span></h2>
+                        <p>Fill out the form below to share your details and queries. Our team will get in touch with you.
+                        </p>
                     </div>
-                </div>
-                <div class="card" data-aos="fade-up" data-aos-duration="1500">
-                    <div class="card-header" id="headingTwo">
-                        <h2 class="mb-0">
-                            <button type="button" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"><i
-                                    class="icon_faq icofont-plus"></i></i> How long would it
-                                take to build up my ecommerce store?</button>
-                        </h2>
-                    </div>
-                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-                        <div class="card-body">
-                            <p>For most of the time, it will take a few days to a few weeks, depending on your needs. We
-                                will guide you through the process for a smooth launch.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="card" data-aos="fade-up" data-aos-duration="1500">
-                    <div class="card-header" id="headingThree">
-                        <h2 class="mb-0">
-                            <button type="button" class="btn btn-link collapsed" data-toggle="collapse"
-                                data-target="#collapseThree"><i class="icon_faq icofont-plus"></i></i>Is the
-                                e-commerce system customizable to fit my brand?</button>
-                        </h2>
-                    </div>
-                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-                        <div class="card-body">
-                            <p>Yes, our system provides themes and templates that can be customized for use as your own
-                                company brand.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="card" data-aos="fade-up" data-aos-duration="1500">
-                    <div class="card-header" id="headingFour">
-                        <h2 class="mb-0">
-                            <button type="button" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour"><i
-                                    class="icon_faq icofont-plus"></i></i>Can I offer
-                                different payment options using my website?</button>
-                        </h2>
-                    </div>
-                    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
-                        <div class="card-body">
-                            <p>Absolutely! Our eCommerce system supports a wide range of secure payment gateways to
-                                ensure the best checkout experience for your customers.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="card" data-aos="fade-up" data-aos-duration="1500">
-                    <div class="card-header" id="headingFive">
-                        <h2 class="mb-0">
-                            <button type="button" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFive"><i
-                                    class="icon_faq icofont-plus"></i></i> Do I need to be
-                                technically knowledgeable to use the eCommerce system?
-                            </button>
-                        </h2>
-                    </div>
-                    <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
-                        <div class="card-body">
-                            <p>It has no technical knowledge, and it's user-friendly; plus, there is a team that can
-                                help you manage your store with ease.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="card" data-aos="fade-up" data-aos-duration="1500">
-                    <div class="card-header" id="headingSix">
-                        <h2 class="mb-0">
-                            <button type="button" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSix"><i
-                                    class="icon_faq icofont-plus"></i></i> Once my eCommerce
-                                system has been launched, will there be continued support?
-                            </button>
-                        </h2>
-                    </div>
-                    <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
-                        <div class="card-body">
-                            <p>
-                                We do provide support for continuous running of your store. Any technical issues or
-                                updates, we are here to offer assistance.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- container end -->
-</section>
-<!-- FAQ-Section end -->
-
-<div class="modal fade" id="buyNowModal" tabindex="-1" aria-labelledby="buyNowModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="buyNowModalLabel">Fill Owner Details</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <form action="" method="POST" id="ownerDetailsForm" data-parsley-validate>
-                    @csrf
-                    <div class="modal-body row">
-
-                        <div class="mb-3 col-6">
-                            <label for="ownerName" class="form-label">Owner Name <span class="text-danger">
-                                    *</span></label>
-                            <input type="text" class="form-control" id="ownerName" name="owner_name" placeholder="Enter Your Name"
+                    <form action="{{ url('inquiry-submit') }}" method="POST" data-parsley-validate>
+                        @csrf
+                        <div class="form-group">
+                            <input type="text" placeholder="Name" class="form-control" name="name"
                                 data-parsley-required="true" data-parsley-trigger="change">
                         </div>
-                        <div class="mb-3 col-6">
-                            <label for="ownerShop" class="form-label">Shop Name <span class="text-danger">
-                                    *</span></label>
-                            <input type="text" class="form-control" id="ownerShop" name="shop_name" placeholder="Enter Your Shop Name"
-                                data-parsley-required="true" data-parsley-trigger="change">
-                        </div>
-                        <div class="mb-3 col-6">
-                            <label for="ownerEmail" class="form-label">Email <span class="text-danger">
-                                    *</span></label>
-                            <input type="email" class="form-control" id="ownerEmail" name="shop_email" placeholder="Enter Your Email"
+                        <div class="form-group">
+                            <input type="email" placeholder="Email" class="form-control" name="email"
                                 data-parsley-required="true" data-parsley-type="email" data-parsley-trigger="change">
                         </div>
-                        <div class="mb-3 col-6">
-                            <label for="ownerPhone" class="form-label">Phone <span class="text-danger">
-                                    *</span></label>
-                            <input type="number" class="form-control" id="ownerPhone" name="shop_phone" data-parsley-required="true"
-                                data-parsley-type="digits" placeholder="Enter Your Phone Number" data-parsley-length="[10, 15]"
+                        <!-- <div class="form-group">
+                        <input type="text" placeholder="Company Name" class="form-control">
+                        </div> -->
+                        <!-- <div class="form-group">
+                        <select class="form-control">
+                        <option value="">Country</option>
+                        </select>
+                        </div> -->
+                        <div class="form-group">
+                            <input type="text" placeholder="Phone" class="form-control" name="phone"
+                                data-parsley-required="true" data-parsley-type="digits" data-parsley-length="[10, 15]"
                                 data-parsley-length-message="Phone number must be between 10 to 15 digits"
                                 data-parsley-trigger="change">
                         </div>
-                        <div class="mb-3 col-6">
-                            <label for="ownerDomain" class="form-label">Domain (www.example.co.za) </label>
-                            <input type="url" class="form-control" id="ownerDomain" name="domain" placeholder="Enter Your Domain">
+                        <div class="form-group">
+                            <input type="text" placeholder="Address" class="form-control" name="address"
+                                data-parsley-required="true" data-parsley-trigger="change">
                         </div>
-                        <div class="mb-3 col-6">
-                            <label for="ownerAddress" class="form-label">Address <span class="text-danger">
-                                    *</span></label>
-                            <textarea class="form-control" placeholder="Enter Your Address" id="ownerAddress" name="address" rows="3"
-                                data-parsley-required="true" data-parsley-trigger="change"></textarea>
+                        <div class="form-group">
+                            <textarea class="form-control" placeholder="Your message" name="message" data-parsley-required="true"
+                                data-parsley-trigger="change"></textarea>
+                        </div>
+                        <!-- <div class="form-group term_check">
+                                                                                                                                                                <input type="checkbox" id="term">
+                                                                                                                                                                <label for="term">I agree to receive emails, newsletters and promotional messages</label>
+                                                                                                                                                            </div> -->
+                        <div class="form-group mb-0 text-center">
+                            <button type="submit" class="btn puprple_btn">SEND MESSAGE</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="contact_info">
+                    <div class="icon"><img src="{{ asset('public/front/images/contact_message_icon.png') }}"
+                            alt="image"></div>
+                    <div class="section_title">
+                        <h2>Have a <span>question?</span></h2>
+                        <p>We're here to help! Reach out to our team, and we'll provide the answers you need to get started
+                            with your e-commerce system.</p>
+                    </div>
+                    <a href="#faq" class="btn puprple_btn">READ FAQ</a>
+                    <ul class="contact_info_list">
+                        <li>
+                            <div class="img">
+                                <img src="{{ asset('public/front/images/mail_icon.png') }}" alt="image">
+                            </div>
+                            <div class="text">
+                                <span>Email Us</span>
+                                <a href="#">{{ $users[0]->email }}</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="img">
+                                <img src="{{ asset('public/front/images/call_icon.png') }}" alt="image">
+                            </div>
+                            <div class="text">
+                                <span>Call Us</span>
+                                <a href="#">{{ $users[0]->mobile }}</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="img">
+                                <img src="{{ asset('public/front/images/location_icon.png') }}" alt="image">
+                            </div>
+                            <div class="text">
+                                <span>Visit Us</span>
+                                <p>{{ $users[0]->address }}</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        </div>
+        <!-- container end -->
+    </section>
+    <!-- How-It-Workes-Section-end -->
+
+    <!-- FAQ-Section start -->
+    <section class="row_am faq_section" id="faq">
+        <!-- container start -->
+        <div class="container">
+            <div class="section_title" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">
+                <!-- h2 -->
+                <h2><span>FAQ</span> - Frequently Asked Questions</h2>
+                <!-- p -->
+                <p></p>
+            </div>
+            <!-- faq data -->
+            <div class="faq_panel">
+                <div class="accordion" id="accordionExample">
+                    <div class="card" data-aos="fade-up" data-aos-duration="1500">
+                        <div class="card-header" id="headingOne">
+                            <h2 class="mb-0">
+                                <button type="button" class="btn btn-link active" data-toggle="collapse"
+                                    data-target="#collapseOne">
+                                    <i class="icon_faq icofont-plus"></i></i>What is an e-commerce website?</button>
+                            </h2>
+                        </div>
+                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                            data-parent="#accordionExample">
+                            <div class="card-body">
+                                <p>An e-commerce website allows you to sell products or services online, our ecommerce
+                                    website are fully
+                                    customisable and integrated into a payment gateway and courier services.
+                                </p>
+                            </div>
                         </div>
                     </div>
-                    <div class="modal-footer">
-
-
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <button type="submit" class="btn btn-primary">Save</button>
+                    <div class="card" data-aos="fade-up" data-aos-duration="1500">
+                        <div class="card-header" id="headingTwo">
+                            <h2 class="mb-0">
+                                <button type="button" class="btn btn-link collapsed" data-toggle="collapse"
+                                    data-target="#collapseTwo"><i class="icon_faq icofont-plus"></i></i> How long does it
+                                    take to set up my online store?</button>
+                            </h2>
+                        </div>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                            data-parent="#accordionExample">
+                            <div class="card-body">
+                                <p>Depending on your requirements, it usually takes 5–10 business days to fully set up and
+                                    launch your
+                                    store.
+                                </p>
+                            </div>
+                        </div>
                     </div>
-                </form>
+                    <div class="card" data-aos="fade-up" data-aos-duration="1500">
+                        <div class="card-header" id="headingFour">
+                            <h2 class="mb-0">
+                                <button type="button" class="btn btn-link collapsed" data-toggle="collapse"
+                                    data-target="#collapseFour"><i class="icon_faq icofont-plus"></i></i>How do I get my
+                                    money?</button>
+                            </h2>
+                        </div>
+                        <div id="collapseFour" class="collapse" aria-labelledby="headingFour"
+                            data-parent="#accordionExample">
+                            <div class="card-body">
+                                <p>Payment is made via secure online payment into your very own payfast account in real
+                                    time. You have
+                                    full control of all your money at all time. We do not touch or hold any of your money at
+                                    any time.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card" data-aos="fade-up" data-aos-duration="1500">
+                        <div class="card-header" id="headingFive">
+                            <h2 class="mb-0">
+                                <button type="button" class="btn btn-link collapsed" data-toggle="collapse"
+                                    data-target="#collapseFive"><i class="icon_faq icofont-plus"></i></i> Can I customize
+                                    my store after it’s set up?
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseFive" class="collapse" aria-labelledby="headingFive"
+                            data-parent="#accordionExample">
+                            <div class="card-body">
+                                <p>Yes, you will have full access to customise your store, including adding your logo,
+                                    updating contact
+                                    details about us pages, terms and condition and uploading products, pictures and
+                                    descriptions of
+                                    products.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card" data-aos="fade-up" data-aos-duration="1500">
+                        <div class="card-header" id="headingSix">
+                            <h2 class="mb-0">
+                                <button type="button" class="btn btn-link collapsed" data-toggle="collapse"
+                                    data-target="#collapseSix"><i class="icon_faq icofont-plus"></i></i> Can payment
+                                    methods be integrated?
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseSix" class="collapse" aria-labelledby="headingSix"
+                            data-parent="#accordionExample">
+                            <div class="card-body">
+                                <p>
+                                    We integrate secure payment gateways the payfast and can accept all credit cards and
+                                    debit cards, and
+                                    more, depending on your preference.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card" data-aos="fade-up" data-aos-duration="1500">
+                        <div class="card-header" id="headingSeven">
+                            <h2 class="mb-0">
+                                <button type="button" class="btn btn-link collapsed" data-toggle="collapse"
+                                    data-target="#collapseSeven"><i class="icon_faq icofont-plus"></i></i> Can I link my
+                                    social media
+                                    accounts to the store?
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven"
+                            data-parent="#accordionExample">
+                            <div class="card-body">
+                                <p>
+                                    Yes, you can add links to your social media profiles to enhance your marketing and
+                                    connect with
+                                    customers.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card" data-aos="fade-up" data-aos-duration="1500">
+                        <div class="card-header" id="headingEight">
+                            <h2 class="mb-0">
+                                <button type="button" class="btn btn-link collapsed" data-toggle="collapse"
+                                    data-target="#collapseEight"><i class="icon_faq icofont-plus"></i></i> Do you provide
+                                    training on how to
+                                    manage the store?
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseEight" class="collapse" aria-labelledby="headingEight"
+                            data-parent="#accordionExample">
+                            <div class="card-body">
+                                <p>
+                                    Yes, we provide basic training on managing your store, including adding products,
+                                    tracking orders, and
+                                    using the back-end tools.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card" data-aos="fade-up" data-aos-duration="1500">
+                        <div class="card-header" id="headingNine">
+                            <h2 class="mb-0">
+                                <button type="button" class="btn btn-link collapsed" data-toggle="collapse"
+                                    data-target="#collapseNine"><i class="icon_faq icofont-plus"></i></i> What courier
+                                    services can be integrated?
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseNine" class="collapse" aria-labelledby="headingNine"
+                            data-parent="#accordionExample">
+                            <div class="card-body">
+                                <p>
+                                    We integrate with Courier guy, who will simply arrive at your registered address to
+                                    collect the parcel
+                                    and deliver it to its destination allowing you and the customer live tracking.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card" data-aos="fade-up" data-aos-duration="1500">
+                        <div class="card-header" id="headingTen">
+                            <h2 class="mb-0">
+                                <button type="button" class="btn btn-link collapsed" data-toggle="collapse"
+                                    data-target="#collapseTen"><i class="icon_faq icofont-plus"></i></i> Is my store
+                                    mobile-friendly?
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseTen" class="collapse" aria-labelledby="headingTen"
+                            data-parent="#accordionExample">
+                            <div class="card-body">
+                                <p>
+                                    Absolutely! All our e-commerce websites are designed to be fully responsive and work
+                                    seamlessly on
+                                    mobile devices.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card" data-aos="fade-up" data-aos-duration="1500">
+                        <div class="card-header" id="headingEleven">
+                            <h2 class="mb-0">
+                                <button type="button" class="btn btn-link collapsed" data-toggle="collapse"
+                                    data-target="#collapseEleven"><i class="icon_faq icofont-plus"></i></i> Do you provide
+                                    an APP ?
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseEleven" class="collapse" aria-labelledby="headingEleven"
+                            data-parent="#accordionExample">
+                            <div class="card-body">
+                                <p>
+                                    We offer a full app integration available on the Playstore and Appstore depending on
+                                    what package you
+                                    have opted for.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card" data-aos="fade-up" data-aos-duration="1500">
+                        <div class="card-header" id="headingTwelve">
+                            <h2 class="mb-0">
+                                <button type="button" class="btn btn-link collapsed" data-toggle="collapse"
+                                    data-target="#collapseTwelve"><i class="icon_faq icofont-plus"></i></i> Can I add
+                                    discounts or
+                                    promotions to my store?
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseTwelve" class="collapse" aria-labelledby="headingTwelve"
+                            data-parent="#accordionExample">
+                            <div class="card-body">
+                                <p>
+                                    Yes, you can easily create and manage discounts, promo codes, and special offers from
+                                    the back end of
+                                    your store.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card" data-aos="fade-up" data-aos-duration="1500">
+                        <div class="card-header" id="headingThirteen">
+                            <h2 class="mb-0">
+                                <button type="button" class="btn btn-link collapsed" data-toggle="collapse"
+                                    data-target="#collapseThirteen"><i class="icon_faq icofont-plus"></i></i> What support
+                                    do you provide
+                                    after setup?
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseThirteen" class="collapse" aria-labelledby="headingThirteen"
+                            data-parent="#accordionExample">
+                            <div class="card-body">
+                                <p>
+                                    We offer ongoing support and assistance to help you manage and scale your e-commerce
+                                    business.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card" data-aos="fade-up" data-aos-duration="1500">
+                        <div class="card-header" id="headingFourteen">
+                            <h2 class="mb-0">
+                                <button type="button" class="btn btn-link collapsed" data-toggle="collapse"
+                                    data-target="#collapseFourteen"><i class="icon_faq icofont-plus"></i></i> How do I
+                                    handle returns and
+                                    refunds?
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseFourteen" class="collapse" aria-labelledby="headingFourteen"
+                            data-parent="#accordionExample">
+                            <div class="card-body">
+                                <p>
+                                    You can set your return and refund policies, and we’ll help you configure them on your
+                                    store.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card" data-aos="fade-up" data-aos-duration="1500">
+                        <div class="card-header" id="headingFifteen">
+                            <h2 class="mb-0">
+                                <button type="button" class="btn btn-link collapsed" data-toggle="collapse"
+                                    data-target="#collapseFifteen"><i class="icon_faq icofont-plus"></i></i> What happens
+                                    if I encounter
+                                    technical issues?
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseFifteen" class="collapse" aria-labelledby="headingFifteen"
+                            data-parent="#accordionExample">
+                            <div class="card-body">
+                                <p>
+                                    Our LOCAL team is available to assist with any technical issues and ensure your store
+                                    runs smoothly.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card" data-aos="fade-up" data-aos-duration="1500">
+                        <div class="card-header" id="headingSixteen">
+                            <h2 class="mb-0">
+                                <button type="button" class="btn btn-link collapsed" data-toggle="collapse"
+                                    data-target="#collapseSixteen"><i class="icon_faq icofont-plus"></i></i> Do you
+                                    provide hosting for my
+                                    website?
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseSixteen" class="collapse" aria-labelledby="headingSixteen"
+                            data-parent="#accordionExample">
+                            <div class="card-body">
+                                <p>
+                                    Yes, we provide secure and reliable hosting to ensure your store is always accessible to
+                                    customers.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card" data-aos="fade-up" data-aos-duration="1500">
+                        <div class="card-header" id="headingSeventeen">
+                            <h2 class="mb-0">
+                                <button type="button" class="btn btn-link collapsed" data-toggle="collapse"
+                                    data-target="#collapseSeventeen"><i class="icon_faq icofont-plus"></i></i> What email
+                                    do I use?
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseSeventeen" class="collapse" aria-labelledby="headingSeventeen"
+                            data-parent="#accordionExample">
+                            <div class="card-body">
+                                <p>
+                                    We provide you with a professional email account linked to your own Domain.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card" data-aos="fade-up" data-aos-duration="1500">
+                        <div class="card-header" id="headingEighteen">
+                            <h2 class="mb-0">
+                                <button type="button" class="btn btn-link collapsed" data-toggle="collapse"
+                                    data-target="#collapseEighteen"><i class="icon_faq icofont-plus"></i></i> Can I expand
+                                    my store in the
+                                    future?
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseEighteen" class="collapse" aria-labelledby="headingEighteen"
+                            data-parent="#accordionExample">
+                            <div class="card-body">
+                                <p>
+                                    Absolutely! Your store is scalable, allowing you to add new features, products, or
+                                    categories as your
+                                    business grows.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- container end -->
+    </section>
+    <!-- FAQ-Section end -->
+
+    <div class="modal fade" id="buyNowModal" tabindex="-1" aria-labelledby="buyNowModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="buyNowModalLabel">Fill Owner Details</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="" method="POST" id="ownerDetailsForm" data-parsley-validate>
+                        @csrf
+                        <div class="modal-body row">
+
+                            <div class="mb-3 col-6">
+                                <label for="ownerName" class="form-label">Owner Name <span class="text-danger">
+                                        *</span></label>
+                                <input type="text" class="form-control" id="ownerName" name="owner_name"
+                                    placeholder="Enter Your Name" data-parsley-required="true"
+                                    data-parsley-trigger="change">
+                            </div>
+                            <div class="mb-3 col-6">
+                                <label for="ownerShop" class="form-label">Shop Name <span class="text-danger">
+                                        *</span></label>
+                                <input type="text" class="form-control" id="ownerShop" name="shop_name"
+                                    placeholder="Enter Your Shop Name" data-parsley-required="true"
+                                    data-parsley-trigger="change">
+                            </div>
+                            <div class="mb-3 col-6">
+                                <label for="ownerEmail" class="form-label">Email <span class="text-danger">
+                                        *</span></label>
+                                <input type="email" class="form-control" id="ownerEmail" name="shop_email"
+                                    placeholder="Enter Your Email" data-parsley-required="true" data-parsley-type="email"
+                                    data-parsley-trigger="change">
+                            </div>
+                            <div class="mb-3 col-6">
+                                <label for="ownerPhone" class="form-label">Phone <span class="text-danger">
+                                        *</span></label>
+                                <input type="number" class="form-control" id="ownerPhone" name="shop_phone"
+                                    data-parsley-required="true" data-parsley-type="digits"
+                                    placeholder="Enter Your Phone Number" data-parsley-length="[10, 15]"
+                                    data-parsley-length-message="Phone number must be between 10 to 15 digits"
+                                    data-parsley-trigger="change">
+                            </div>
+                            <div class="mb-3 col-6">
+                                <label for="ownerDomain" class="form-label">Domain (www.example.co.za) </label>
+                                <input type="url" class="form-control" id="ownerDomain" name="domain"
+                                    placeholder="Enter Your Domain">
+                            </div>
+                            <div class="mb-3 col-6">
+                                <label for="ownerAddress" class="form-label">Address <span class="text-danger">
+                                        *</span></label>
+                                <textarea class="form-control" placeholder="Enter Your Address" id="ownerAddress" name="address" rows="3"
+                                    data-parsley-required="true" data-parsley-trigger="change"></textarea>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+
+
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="submit" class="btn btn-primary">Save</button>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
     </div>
-</div>
 
-{{-- --}}
+    {{-- --}}
 
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                ...
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
             </div>
         </div>
     </div>
-</div>
 
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-        const modal = document.getElementById('buyNowModal');
-        const form = document.getElementById('ownerDetailsForm');
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const modal = document.getElementById('buyNowModal');
+            const form = document.getElementById('ownerDetailsForm');
 
-        document.querySelectorAll('.buy-now-btn').forEach(btn => {
-            btn.addEventListener('click', function() {
-                const route = this.getAttribute('data-route');
-                const packageName = this.getAttribute('data-name');
-                // Set the form action dynamically
-                form.action = route;
+            document.querySelectorAll('.buy-now-btn').forEach(btn => {
+                btn.addEventListener('click', function() {
+                    const route = this.getAttribute('data-route');
+                    const packageName = this.getAttribute('data-name');
+                    // Set the form action dynamically
+                    form.action = route;
 
-                // Update modal title dynamically
-                // modal.querySelector('.modal-title').textContent = `Fill Owner Details for ${packageName}`;
+                    // Update modal title dynamically
+                    // modal.querySelector('.modal-title').textContent = `Fill Owner Details for ${packageName}`;
+                });
             });
         });
-    });
-</script>
+    </script>
 
-{{-- --}}
+    {{-- --}}
 @endsection
 
 <script>

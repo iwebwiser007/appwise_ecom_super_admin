@@ -226,6 +226,10 @@ body {
     overflow-x: hidden;
 }
 
+.text-primary {
+    color: #00b0ff !important;
+}
+
 a {
     text-decoration: none;
     color: var(--body-text-purplenew);
@@ -3639,4 +3643,15 @@ header.fix_style.white_header {
 
 .map_section {
     margin: 50px 0;
+}
+
+.features_section .section_title p {
+    max-width: 1140px;
+    margin: 20px auto 40px;
+}
+
+.interface_section .section_title p,
+.how_it_works .section_title p {
+    max-width: 940px;
+    margin: 20px auto 40px;
 }
