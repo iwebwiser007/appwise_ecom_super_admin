@@ -2,6 +2,9 @@
 
 namespace App\Console\Commands;
 
+use App\Models\PackageBuy;
+use Illuminate\Support\Facades\Log;
+
 use Illuminate\Console\Command;
 
 use App\Models\ShopOwner;
@@ -31,19 +34,65 @@ class StatusUpdate extends Command
      */
     public function handle()
     {
- $owners = ShopOwner::with('package')->where('status', 'active')->get();
+        $packages = PackageBuy::with('shopOwner')->where('status', 'active')->orWhere('status', 'expired')->get();
     
- foreach ($owners as $shopOwner) {
-     $createdAt = Carbon::parse($shopOwner->created_at);
-     $currentDate = Carbon::now();
-     $elapsedDays = $createdAt->diffInDays($currentDate);
-     $remainingDays = $shopOwner->package->days - $elapsedDays;
-     if ($remainingDays <= 0) {
-         $shopOwner->status = 'inactive';
-         $shopOwner->save(); 
-     }
-     \Log::info($remainingDays);
- }        
+        foreach ($packages as $package) {
+            $expiryDate = Carbon::parse($package->created_at)->addDays($package->days);
+            
+            // Check if package has expired or is active
+            if (Carbon::now()->greaterThanOrEqualTo($expiryDate)) {
+                if ($package->status !== 'expired') {
+                    $package->status = 'expired';
+                    $package->save();
 
+                    $email = $package->shopOwner->email; 
+                    
+                    $messageData = [
+                        'email'        => $email,
+                        'name'         => $package->shopOwner->name,  
+                        'package_id'     => $package->id,               
+                        'packageDetail' => $package, 
+                        'reminderType' => 'expired'
+                         
+                    ];
+    
+                   
+                        \Illuminate\Support\Facades\Mail::send('emails.package_expiry', $messageData, function ($message) use ($email) {
+                            $message->to($email)->subject("Your Package is Expired");
+                        });
+
+
+                }
+            } else {
+                if ($package->status === 'expired') {
+                    $package->status = 'active';
+                    $package->save();
+                }
+
+                $remainingDays = Carbon::now()->diffInDays($expiryDate);
+
+    
+                if ($remainingDays <= 5 && $remainingDays >= 0) {
+                    $email = $package->shopOwner->email; 
+                    
+                    $messageData = [
+                        'email'        => $email,
+                        'name'         => $package->shopOwner->name,  
+                        'package_id'     => $package->id,               
+                        'packageDetail' => $package,  
+                        'remainingDays' => $remainingDays,  
+                        'reminderType' => 'before_expiry'                
+                    ];
+    
+                   
+                        \Illuminate\Support\Facades\Mail::send('emails.package_expiry', $messageData, function ($message) use ($email) {
+                            $message->to($email)->subject("Your Package is Expiring Soon");
+                        });
+                   
+                }
+            }
+        }
     }
 }
+
+

@@ -102,6 +102,8 @@ class PayfastController extends Controller
 
         $transaction_id = 'PF' . strtoupper(Str::random(12));
 
+       
+
         PackageBuy::create([
             'package_id' => $payfastData['package_id'],
             'shop_owner_id' => $payfastData['owner_id'],

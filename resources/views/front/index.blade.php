@@ -1,4 +1,5 @@
 @extends('components.front.layouts')
+
 @section('content')
     <!-- Banner-Section-Start -->
     <div class="modal fade" id="payfastpopup" tabindex="-1" aria-labelledby="payfastpopupLabel" aria-hidden="true">
@@ -21,7 +22,7 @@
                             <span class="fw-bold">Accept Multiple Payment Methods:</span> Offer your customers flexible
                             options like credit cards, EFT,
                             and mobile wallets.
-                        </li>
+                        </li>  
                         <li><span class="fw-bold">Secure Transactions:</span> Advanced encryption and fraud detection keep
                             your business and customers
                             safe.</li>
@@ -823,13 +824,13 @@
                                 data-parsley-required="true" data-parsley-type="email" data-parsley-trigger="change">
                         </div>
                         <!-- <div class="form-group">
-                                                                                                                                                                                            <input type="text" placeholder="Company Name" class="form-control">
-                                                                                                                                                                                        </div> -->
+                        <input type="text" placeholder="Company Name" class="form-control">
+                        </div> -->
                         <!-- <div class="form-group">
-                                                                                                                                                                                            <select class="form-control">
-                                                                                                                                                                                                <option value="">Country</option>
-                                                                                                                                                                                            </select>
-                                                                                                                                                                                        </div> -->
+                        <select class="form-control">
+                        <option value="">Country</option>
+                        </select>
+                        </div> -->
                         <div class="form-group">
                             <input type="text" placeholder="Phone" class="form-control" name="phone"
                                 data-parsley-required="true" data-parsley-type="digits" data-parsley-length="[10, 15]"
@@ -1371,4 +1372,7 @@
             closeButton.click();
         }
     }, 3000);
+
 </script>
+
+
