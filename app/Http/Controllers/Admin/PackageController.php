@@ -143,6 +143,7 @@ class PackageController extends Controller
                     ]);
                 }
                 $packageBuy = $query->with('shopOwner')->get();
+
                 
                 return view('admin.packages.package_buy', compact('packageBuy'));
             }
@@ -150,6 +151,8 @@ class PackageController extends Controller
         
 
         $packageBuy = PackageBuy::with('shopOwner')->get();
+        
+
         return view('admin.packages.package_buy', compact('packageBuy'));
     }
 
@@ -212,6 +215,7 @@ class PackageController extends Controller
 
         // $domainUrl = 'http://localhost/appwise';
         $domainUrl = $shopOwner['domain'];
+
         
         // return $domainUrl;
         $response = $this->packageLogicService->sendPackageUpgradeData($domainUrl, $data);
@@ -223,6 +227,7 @@ class PackageController extends Controller
                 'details' => $response['message'],
             ], 500);
         }
+        
 
         // return redirect()->back()->with('success_message', 'Package Upgrade Successfully');
 

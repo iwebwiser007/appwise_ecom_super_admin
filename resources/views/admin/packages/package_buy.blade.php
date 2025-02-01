@@ -74,19 +74,19 @@
                             <th>ID</th>
                             <th>Shop-Owner Name</th>
                             <th>Package Name</th>
+                            <th>Purchase Date</th>
+                            <th>Expire Date</th>
                             <th>Number Of Section</th>
                             <th>Number Of Category</th>
                             <th>Number Of Product</th>
                             <th>Price</th>
                             <th>Days</th>
-                            <th>Start Date</th>
-                            <th>End Date</th>
                             <th>Status</th>
                             <th>Actions</th>
                         </tr>
                     </thead>
                     <tbody>
-                    @php
+                        @php
                         $i = 1;
                         @endphp
                         @foreach ($packageBuy as $package)
@@ -98,20 +98,25 @@
                                 </a>
                             </td>
                             <td>{{ $package->package_name }}</td>
+                            <td>{{ $package->created_at }}</td>
+                            <td>
+                                @php
+                                $expiryDate = now()->addDays($package->days)->format('Y-m-d H:i:s');
+                                @endphp
+                                {{ $expiryDate }}
+                            </td>
                             <td>{{ $package->number_of_section }}</td>
                             <td>{{ $package->number_of_category }}</td>
                             <td>{{ $package->number_of_product }}</td>
                             <td>{{ $package->price }}</td>
                             <td>{{ $package->days }}</td>
-                            <td>{{ $package->start_date ?? "N/A" }}</td>
-                            <td>{{ $package->end_date ?? "N/A" }}</td>
                             <td>
                                 @if($package->status == 'active')
-                                <span class="badge bg-success " data-id="
-                                    {{ $package->id }}" data-status="active">Active</span>
+                                <span class="badge bg-success" data-id="{{ $package->id }}" data-status="active">Active</span>
                                 @elseif($package->status == 'inactive')
-                                <span class="badge bg-danger " data-id="
-                                    {{ $package->id }}" data-status="inactive">Inactive</span>
+                                <span class="badge bg-danger" data-id="{{ $package->id }}" data-status="inactive">Inactive</span>
+                                @elseif($package->status == 'expired')
+                                <span class="badge bg-danger" data-id="{{ $package->id }}" data-status="expired">Expired</span>
                                 @else
                                 <span class="badge bg-secondary">N/A</span>
                                 @endif
