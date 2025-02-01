@@ -66,7 +66,7 @@
                         </tr>
                     </thead>
                     <tbody>
-                    @php
+                        @php
                         $i = 1;
                         @endphp
                         @foreach ($shopOwners as $shopOwner)
@@ -83,16 +83,24 @@
                             <td>{{ $shopOwner->end_date ?? 'N/A' }}</td> -->
 
                             <td>
-                                @if ($shopOwner->status == 'active' && (!$shopOwner->end_date || now() <= $shopOwner->end_date))
+                                @if ($shopOwner->status == 'active')
+                                <span class="badge bg-success @can('owner status') change-status @endcan" data-id="{{ $shopOwner->id }}"
+                                    data-status="active">Active</span>
+                                @elseif ($shopOwner->status == 'inactive')
+                                <span class="badge bg-danger @can('owner status') change-status @endcan" data-id="{{ $shopOwner->id }}"
+                                    data-status="inactive">Inactive</span>
+                                @endif
+                                {{--@if ($shopOwner->status == 'active' && (!$shopOwner->end_date || now() <= $shopOwner->end_date))
                                     <span class="badge bg-success @can('owner status') change-status @endcan"
                                         data-id="{{ $shopOwner->id }}" data-status="active">Active</span>
-                                    @elseif ($shopOwner->status == 'inactive' && (!$shopOwner->end_date || now() <= $shopOwner->end_date))
-                                        <span class="badge bg-danger @can('owner status') change-status @endcan"
-                                            data-id="{{ $shopOwner->id }}" data-status="inactive">Inactive</span>
-                                        @elseif ($shopOwner->end_date && now() > $shopOwner->end_date)
-                                        <span class="badge bg-dark">Suspended</span>
-                                        @endif
-
+                                @elseif ($shopOwner->status == 'inactive' && (!$shopOwner->end_date || now() <= $shopOwner->
+                                    end_date))
+                                    <span class="badge bg-danger @can('owner status') change-status @endcan"
+                                        data-id="{{ $shopOwner->id }}" data-status="inactive">Inactive</span>
+                                    @elseif ($shopOwner->end_date && now() > $shopOwner->end_date)
+                                    <span class="badge bg-dark">Suspended</span>
+                                    @endif
+                                    --}}
                             </td>
                             @if (Gate::check('edit owner') || Gate::check('delete owner'))
                             <td>
@@ -166,4 +174,5 @@
         });
     });
 </script>
+
 @endsection
